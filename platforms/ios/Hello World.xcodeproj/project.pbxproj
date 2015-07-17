@@ -40,10 +40,10 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		A54CCA30855049BAAF8DCF93 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD0BA897CDA45EEAD0E6D27 /* CoreBluetooth.framework */; };
-		A4AAB7B72D724E569B56C7DD /* VolumeHijackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EB1BAF63084028B0E74A20 /* VolumeHijackPlugin.m */; };
-		6F754F6892074678A7DF8A96 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC68044D337D4862AC54AAA5 /* JPSVolumeButtonHandler.m */; };
-		B06ED819A4564F3EA01C3114 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6D97A99143C084FF22AD /* MediaPlayer.framework */; };
-		FD64A98487844101A0977B56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164D50255E114E5F88FB1EAE /* AVFoundation.framework */; };
+		401330670A8940B192565D65 /* VolumeHijackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E5BEF711E34743AACD76E5 /* VolumeHijackPlugin.m */; };
+		8CD82F4E6F27408EA349142E /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6781520DEAC4A8787C82EF2 /* JPSVolumeButtonHandler.m */; };
+		03ED6A5B3BEE4300B8C849CE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02798334D5144A818804BD01 /* MediaPlayer.framework */; };
+		0FCC8EAA66A74E3B8E1CBA06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F9CE75518B4905B12B4F09 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,12 +110,12 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Hello World/config.xml"; sourceTree = "<group>"; };
 		8DD0BA897CDA45EEAD0E6D27 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		D9EB1BAF63084028B0E74A20 /* VolumeHijackPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "VolumeHijackPlugin.m"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		AC68044D337D4862AC54AAA5 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "JPSVolumeButtonHandler.m"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		3E34BCE614C34579821C8EFC /* VolumeHijackPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VolumeHijackPlugin.h"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		678965EDA36D46678407C5A9 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JPSVolumeButtonHandler.h"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		2C7A6D97A99143C084FF22AD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MediaPlayer.framework"; path = "System/Library/Frameworks/MediaPlayer.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		164D50255E114E5F88FB1EAE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		C2E5BEF711E34743AACD76E5 /* VolumeHijackPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "VolumeHijackPlugin.m"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A6781520DEAC4A8787C82EF2 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "JPSVolumeButtonHandler.m"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2646E8BB4128436D91A36BB3 /* VolumeHijackPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VolumeHijackPlugin.h"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F37726A600524562A3B77405 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JPSVolumeButtonHandler.h"; path = "br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		02798334D5144A818804BD01 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MediaPlayer.framework"; path = "System/Library/Frameworks/MediaPlayer.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		09F9CE75518B4905B12B4F09 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				A54CCA30855049BAAF8DCF93 /* CoreBluetooth.framework in Frameworks */,
-				B06ED819A4564F3EA01C3114 /* MediaPlayer.framework in Frameworks */,
-				FD64A98487844101A0977B56 /* AVFoundation.framework in Frameworks */,
+				03ED6A5B3BEE4300B8C849CE /* MediaPlayer.framework in Frameworks */,
+				0FCC8EAA66A74E3B8E1CBA06 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +203,8 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				8DD0BA897CDA45EEAD0E6D27 /* CoreBluetooth.framework */,
-				2C7A6D97A99143C084FF22AD /* MediaPlayer.framework */,
-				164D50255E114E5F88FB1EAE /* AVFoundation.framework */,
+				02798334D5144A818804BD01 /* MediaPlayer.framework */,
+				09F9CE75518B4905B12B4F09 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,10 +220,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D9EB1BAF63084028B0E74A20 /* VolumeHijackPlugin.m */,
-				AC68044D337D4862AC54AAA5 /* JPSVolumeButtonHandler.m */,
-				3E34BCE614C34579821C8EFC /* VolumeHijackPlugin.h */,
-				678965EDA36D46678407C5A9 /* JPSVolumeButtonHandler.h */,
+				C2E5BEF711E34743AACD76E5 /* VolumeHijackPlugin.m */,
+				A6781520DEAC4A8787C82EF2 /* JPSVolumeButtonHandler.m */,
+				2646E8BB4128436D91A36BB3 /* VolumeHijackPlugin.h */,
+				F37726A600524562A3B77405 /* JPSVolumeButtonHandler.h */,
 			);
 			name = Plugins;
 			path = "Hello World/Plugins";
@@ -408,8 +408,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				A4AAB7B72D724E569B56C7DD /* VolumeHijackPlugin.m in Sources */,
-				6F754F6892074678A7DF8A96 /* JPSVolumeButtonHandler.m in Sources */,
+				401330670A8940B192565D65 /* VolumeHijackPlugin.m in Sources */,
+				8CD82F4E6F27408EA349142E /* JPSVolumeButtonHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

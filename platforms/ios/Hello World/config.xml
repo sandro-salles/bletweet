@@ -17,9 +17,6 @@
     <feature name="BluetoothSerial">
         <param name="ios-package" onload="true" value="MEGBluetoothSerial" />
     </feature>
-    <feature name="VolumeHijack">
-        <param name="ios-package" onload="true" value="VolumeHijackPlugin" />
-    </feature>
     <feature name="BluetoothLePlugin">
         <param name="ios-package" value="BluetoothLePlugin" />
     </feature>
@@ -98,4 +95,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="VolumeHijack">
+        <param name="ios-package" onload="true" value="VolumeHijackPlugin" />
+    </feature>
 </widget>

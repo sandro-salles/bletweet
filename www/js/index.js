@@ -47,17 +47,11 @@ var app = {
         console.log('Received Event: ' + id);
         console.log('test 40');
 
-        var md = cordova.require("cordova/plugin_list").metadata;
-
-
-        var volumehijack = cordova.require("br.com.snippet.cordova.volumehijack.volumehijack");
-
-        //console.log(volumehijack);
         app.display(JSON.stringify(volumehijack));
 
         volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
 
-        //ble.startScan([],app.ble_scan_success, function(){console.log('failure scan');});
+        ble.startScan([],app.ble_scan_success, function(){console.log('failure scan');});
 
     },
     display: function(message) {

@@ -25,25 +25,20 @@
 
 - (void)listen:(CDVInvokedUrlCommand*)command {
 
-	NSLog(@"listen method");
-	// Check command.arguments here.
+    NSLog(@"listen method");
+    // Check command.arguments here.
     [self.commandDelegate runInBackground:^{
        
-    	[JPSVolumeButtonHandler volumeButtonHandlerWithUpBlock:^{
-	        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:1];
-    		[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-	    } downBlock:^{
-	        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
-    		[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        [JPSVolumeButtonHandler volumeButtonHandlerWithUpBlock:^{
+            CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:1];
+            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        } downBlock:^{
+            CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
+            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
-	    }];
-
-    	
+        }];
 
     }];
-
-    
-
 
 }
 
