@@ -10,7 +10,7 @@
                     "CoreBluetooth.framework": [
                         {
                             "xml": false,
-                            "count": 4
+                            "count": 1
                         }
                     ],
                     "MediaPlayer.framework": [
@@ -32,10 +32,6 @@
                     "/widget": [
                         {
                             "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
-                            "count": 2
-                        },
-                        {
-                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" onload=\"true\" value=\"BLECentralPlugin\" /></feature>",
                             "count": 1
                         },
                         {
@@ -44,10 +40,6 @@
                         }
                     ],
                     "/*": [
-                        {
-                            "xml": "<feature name=\"Cache\"><param name=\"ios-package\" value=\"Cache\" /></feature>",
-                            "count": 1
-                        },
                         {
                             "xml": "<feature name=\"BluetoothLePlugin\"><param name=\"ios-package\" value=\"BluetoothLePlugin\" /></feature>",
                             "count": 1
@@ -69,18 +61,6 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "at.modalog.cordova.plugin.cache": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "com.megster.cordova.bluetoothserial": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "com.randdusing.bluetoothle": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "com.megster.cordova.ble": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "br.com.snippet.cordova.volumehijack": {

@@ -7,39 +7,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.megster.cordova.bluetoothserial": {
-        "source": {
-            "type": "registry",
-            "id": "com.megster.cordova.bluetoothserial"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "at.modalog.cordova.plugin.cache": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/moderna/cordova-plugin-cache.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "com.randdusing.bluetoothle": {
-        "source": {
-            "type": "registry",
-            "id": "com.randdusing.bluetoothle"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "com.megster.cordova.ble": {
-        "source": {
-            "type": "registry",
-            "id": "com.megster.cordova.ble"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "br.com.snippet.cordova.volumehijack": {
         "source": {
             "type": "git",
