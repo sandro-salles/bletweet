@@ -45,16 +45,10 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        console.log('test 11');
+        console.log('test 16');
+        console.log(volumehijack);
 
-        try {
-            ble.startScan([],30,function(device){console.log(JSON.stringify(device));}, function(){console.log('failure');});
-        }catch(e){
-            console.log(e);
-        }
-        //bluetoothle.initialize(function(){console.log('success')}, function(){console.log('failure')}, params);
-
-        //bluetoothle.startScan(function(){console.log('success')}, function(){console.log('failure')}, params);
+        ble.startScan([],app.ble_scan_success, function(){console.log('failure scan');});
 
     },
     display: function(message) {
@@ -68,4 +62,14 @@ var app = {
         display.appendChild(lineBreak);          // add a line break
         display.appendChild(label);              // add the message node
     },
+
+    ble_scan_success: function(device) {
+        console.log(JSON.stringify(device));
+        ble.connect(device.id, app.ble_connect_success, function(){console.log('failure connection')})
+    },
+    ble_connect_success: function(device) {
+        console.log(JSON.stringify(device));
+    }
 };
+
+

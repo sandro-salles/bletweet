@@ -31,5 +31,22 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.megster.cordova.ble": {
+        "source": {
+            "type": "registry",
+            "id": "com.megster.cordova.ble"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "br.com.snippet.cordova.volumehijack": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sandro-salles/volumehijack",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

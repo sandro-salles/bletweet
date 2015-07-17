@@ -10,7 +10,19 @@
                     "CoreBluetooth.framework": [
                         {
                             "xml": false,
-                            "count": 3
+                            "count": 4
+                        }
+                    ],
+                    "MediaPlayer.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
                         }
                     ]
                 }
@@ -21,6 +33,14 @@
                         {
                             "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
                             "count": 2
+                        },
+                        {
+                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" onload=\"true\" value=\"BLECentralPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"VolumeHijack\"><param name=\"ios-package\" onload=\"true\" value=\"VolumeHijackPlugin\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/*": [
@@ -58,6 +78,12 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.randdusing.bluetoothle": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.megster.cordova.ble": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "br.com.snippet.cordova.volumehijack": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

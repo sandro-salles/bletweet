@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="br.com.snippet.cordova.volumehijack"
+    version="0.0.1">
+
+    <name>VolumeHijack</name>
+    <description>Volume Hijack Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>Volume Hijack</keywords>
+
+    <repo>https://github.com/sandro-salles/volumehijack.git</repo>
+    <issue>https://github.com/sandro-salles/volumehijack/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.1.0" />
+    </engines>
+
+    <js-module src="www/volumehijack.js" name="volumehijack">
+        <clobbers target="volumehijack" />
+    </js-module>
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/widget">
+            <feature name="VolumeHijack">
+                <param name="ios-package" value="VolumeHijackPlugin" onload="true"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/VolumeHijackPlugin.h" target-dir="VolumeHijackPlugin" />
+        <source-file src="src/ios/VolumeHijackPlugin.m" target-dir="VolumeHijackPlugin" />
+
+        <header-file src="src/ios/JPSVolumeButtonHandler.h" target-dir="VolumeHijackPlugin" />
+        <source-file src="src/ios/JPSVolumeButtonHandler.m" target-dir="VolumeHijackPlugin" />
+
+        <framework src="MediaPlayer.framework" />
+        <framework src="AVFoundation.framework" />
+
+    </platform>
+</plugin>
