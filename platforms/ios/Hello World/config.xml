@@ -14,11 +14,14 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="VolumeHijack">
+        <param name="ios-package" onload="true" value="VolumeHijackPlugin" />
+    </feature>
+    <feature name="BLE">
+        <param name="ios-package" onload="true" value="BLECentralPlugin" />
+    </feature>
     <feature name="BluetoothSerial">
         <param name="ios-package" onload="true" value="MEGBluetoothSerial" />
-    </feature>
-    <feature name="BluetoothLePlugin">
-        <param name="ios-package" value="BluetoothLePlugin" />
     </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
@@ -63,6 +66,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="com.megster.cordova.ble" />
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
@@ -95,7 +99,4 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <feature name="VolumeHijack">
-        <param name="ios-package" onload="true" value="VolumeHijackPlugin" />
-    </feature>
 </widget>

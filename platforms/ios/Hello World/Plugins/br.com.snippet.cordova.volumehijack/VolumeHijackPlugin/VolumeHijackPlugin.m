@@ -19,24 +19,32 @@
 #import "VolumeHijackPlugin.h"
 #import <Cordova/CDV.h>
 
+
 @implementation VolumeHijackPlugin
+
+@synthesize manager;
+
+- (void)pluginInitialize {
+    
+    NSLog(@"Volume Hijack Plugin");
+    NSLog(@"(c)2015 Sandro Salles");
+    
+    [super pluginInitialize];
+
+}
 
 #pragma mark - Cordova Plugin Methods
 
 - (void)listen:(CDVInvokedUrlCommand*)command {
 
-    NSLog(@"listen method");
+    NSLog(@"listen");
     // Check command.arguments here.
     [self.commandDelegate runInBackground:^{
        
-        [JPSVolumeButtonHandler volumeButtonHandlerWithUpBlock:^{
-            CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:1];
+        self.manager = [JPSVolumeButtonHandler volumeButtonHandlerWithUpBlock:^{
+            CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"HIT"];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-        } downBlock:^{
-            CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
-            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
-        }];
+        } downBlock:nil];
 
     }];
 

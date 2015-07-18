@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hello World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"
+            timestampString = "458865616.076414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-listen:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__29-[VolumeHijackPlugin listen:]_block_invoke"
+                  moduleName = "Hello World"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sandro.salles/workspace/ogilvy/labs/bletweet/platforms/ios/Hello%20World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"
+                  timestampString = "458858947.693755"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__29-[VolumeHijackPlugin listen:]_block_invoke_2"
+                  moduleName = "Hello World"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sandro.salles/workspace/ogilvy/labs/bletweet/platforms/ios/Hello%20World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"
+                  timestampString = "458858947.694132"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hello World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.m"
+            timestampString = "458858936.542589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-init"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hello World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"
+            timestampString = "458865806.643557"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-listen:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hello World/Plugins/br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/VolumeHijackPlugin.m"
+            timestampString = "458866303.976872"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-listen:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -24,7 +24,10 @@
 
 @interface VolumeHijackPlugin : CDVPlugin 
 
+@property (strong, nonatomic) JPSVolumeButtonHandler *manager;
+
 - (void)listen:(CDVInvokedUrlCommand *)command;
+
 
 @end
 

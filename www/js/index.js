@@ -45,13 +45,53 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        console.log('test 40');
+        console.log('test 51');
 
-        app.display(JSON.stringify(volumehijack));
+        //app.display(JSON.stringify(volumehijack));
+        //volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
 
-        volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
+        try {
 
-        ble.startScan([],app.ble_scan_success, function(){console.log('failure scan');});
+            // check to see if Bluetooth is turned on.
+            // this function is called only
+            //if isEnabled(), below, returns success:
+            var listPorts = function() {
+                // list the available BT ports:
+                bluetoothSerial.list(
+                    function(results) {
+                        app.display(JSON.stringify(results));
+                    },
+                    function(error) {
+                        app.display(JSON.stringify(error));
+                    }
+                );
+            }
+
+            // if isEnabled returns failure, this function is called:
+            var notEnabled = function() {
+                app.display("Bluetooth is not enabled.");
+
+                bluetoothSerial.enable(
+                    function() {
+                        console.log("Bluetooth is enabled");
+                    },
+                    function() {
+                        console.log("The user did *not* enable Bluetooth");
+                    }
+                );
+            }
+
+             // check if Bluetooth is on:
+            bluetoothSerial.isEnabled(
+                listPorts,
+                notEnabled
+            );
+        } catch(e) {
+
+            console.log(e);
+        }
+
+        //ble.scan([], 30, app.ble_scan_success, function(){console.log('failure scan');});
 
     },
     display: function(message) {

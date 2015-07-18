@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E9034D59-CC43-46C0-BDA1-365CE820AC8E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hello World</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>639374AA2945D84328F78D54D5ED7750C12B9C99</key>
+		<string>https://github.com/sandro-salles/bletweet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Hello World.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>639374AA2945D84328F78D54D5ED7750C12B9C99</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sandro-salles/bletweet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>639374AA2945D84328F78D54D5ED7750C12B9C99</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>639374AA2945D84328F78D54D5ED7750C12B9C99</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bletweet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

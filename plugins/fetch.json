@@ -15,5 +15,22 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.megster.cordova.ble": {
+        "source": {
+            "type": "registry",
+            "id": "com.megster.cordova.ble"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.megster.cordova.bluetoothserial": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/don/BluetoothSerial",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
