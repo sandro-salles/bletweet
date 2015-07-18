@@ -45,60 +45,13 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        console.log('test 50');
+        console.log('test 52');
 
-        //app.display(JSON.stringify(volumehijack));
+        app.display(JSON.stringify(volumehijack));
+        volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
 
-        //volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
 
-        
-
-        try {
-
-            window.bluetoothSerial = cordova.require("com.megster.cordova.bluetoothserial.bluetoothSerial");
-
-            // check to see if Bluetooth is turned on.
-            // this function is called only
-            //if isEnabled(), below, returns success:
-            var listPorts = function() {
-                // list the available BT ports:
-                bluetoothSerial.list(
-                    function(results) {
-                        app.display(JSON.stringify(results));
-                    },
-                    function(error) {
-                        app.display(JSON.stringify(error));
-                    }
-                );
-            }
-
-            // if isEnabled returns failure, this function is called:
-            var notEnabled = function() {
-                app.display("Bluetooth is not enabled.");
-
-                bluetoothSerial.enable(
-                    function() {
-                        console.log("Bluetooth is enabled");
-                    },
-                    function() {
-                        console.log("The user did *not* enable Bluetooth");
-                    }
-                );
-            }
-
-             // check if Bluetooth is on:
-            bluetoothSerial.isEnabled(
-                listPorts,
-                notEnabled
-            );
-
-        } catch(e) {
-
-            console.log(e);
-
-        }
-
-        //ble.scan([], 30, app.ble_scan_success, function(){console.log('failure scan');});
+        ble.scan([], 50, app.ble_scan_success, function(){console.log('failure scan');});
 
     },
     display: function(message) {
