@@ -13,13 +13,6 @@ module.exports = [
         "clobbers": [
             "ble"
         ]
-    },
-    {
-        "file": "plugins/com.megster.cordova.bluetoothserial/www/bluetoothSerial.js",
-        "id": "com.megster.cordova.bluetoothserial.bluetoothSerial",
-        "clobbers": [
-            "window.bluetoothSerial"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -27,8 +20,7 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.0.0",
     "br.com.snippet.cordova.volumehijack": "0.0.1",
-    "com.megster.cordova.ble": "0.1.9",
-    "com.megster.cordova.bluetoothserial": "0.4.3"
+    "com.megster.cordova.ble": "0.1.9"
 }
 // BOTTOM OF METADATA
 });
