@@ -126,44 +126,31 @@ body {
     left: -3px;
 }
 
-#scan {
+#scan-qrcode {
     background-color: #fd5c63;
 }
 
-#scan::before {
+#scan-qrcode::before {
     content: "1";
 }
 
-#login {
+#twitter-connect {
     background-color: #55acee;
 }
 
-#login::before {
+#twitter-connect::before {
     content: "2";
 }
 
-#friend {
+#friend-pick {
     background-color: #fd9f3e;
 }
 
-#friend::before {
+#friend-pick::before {
     content: "3";
 }
 
-#gender {
-    background-color: #fbb040;
-}
-
-#finish {
-    background-color: #9cb443;
-}
-
-
-#gender::before {
-    content: "4";
-}
-
-#friends {
+#friend-list-container {
     display: block;
     margin: 30px;
     position: relative;
@@ -224,75 +211,6 @@ body {
     font-style: italic;
 }
 
-#genders {
-    list-style: none;
-    position: relative;
-    display: block;
-    margin: 30px;
-    height: 43px;
-}
-
-#genders:after {
-  content: "";
-  clear: both;
-}
-
-#genders li {
-    list-style: none;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 110px;
-    color: #ffffff;
-}
-
-genders li:after {
-  content: "";
-  clear: both;
-}
-
-#genders li:first-child {
-    background-color: #0f7dc2;
-    left: 0px;
-}
-
-#genders li:last-child {
-    background-color: #fc3158;
-    right: 0px;
-}
-
-#genders li label {
-  cursor: pointer;
-  display: block;
-  left: 1px;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  white-space: nowrap;
-  color: #ffffff;
-  padding: 8px 0;
-  font-size: 1.5em;
-}
-
-genders li label:after {
-  content: "";
-  clear: both;
-}
-
-#genders li:first-child label {
-    background-color: #0f7dc2;
-}
-
-#genders li:last-child label {
-    background-color: #fc3158;
-}
-
-#genders li input:checked + label {
-  outline: 4px solid #21b4d0;
-}
-
 #friend-picture {
     width: 70px;
     height: 70px;
@@ -306,6 +224,96 @@ genders li label:after {
     float: left;
     margin-right: 20px;
 }
+
+#gender-pick {
+    background-color: #fbb040;
+}
+
+#gender-pick::before {
+    content: "4";
+}
+
+#gender-list {
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: 30px;
+    height: 43px;
+}
+
+#gender-list:after {
+  content: "";
+  clear: both;
+}
+
+#gender-list li {
+    list-style: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 110px;
+    color: #ffffff;
+}
+
+#gender-list li:after {
+  content: "";
+  clear: both;
+}
+
+#gender-list li:first-child {
+    background-color: #0f7dc2;
+    left: 0px;
+}
+
+#gender-list li:last-child {
+    background-color: #fc3158;
+    right: 0px;
+}
+
+#gender-list li label {
+  cursor: pointer;
+  display: block;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  white-space: nowrap;
+  color: #ffffff;
+  padding: 8px 0;
+  font-size: 1.5em;
+}
+
+#gender-list li label:after {
+  content: "";
+  clear: both;
+}
+
+#gender-list li:first-child label {
+    background-color: #0f7dc2;
+}
+
+#gender-list li:last-child label {
+    background-color: #fc3158;
+}
+
+#gender-list li input:checked + label {
+  outline: 4px solid #21b4d0;
+}
+
+#finish-setup {
+    background-color: #9cb443;
+}
+
+#start-discovery {
+    background-color: #449a88;
+}
+
+#finish-discovery {
+    background-color: #333e48;
+}
+
 
 #message {
     border-radius: 4px;
@@ -340,6 +348,7 @@ h1 {
     margin: 0 90px;
     position: relative;
     background-color: #ffffff;
+    padding-top: 10px;
 }
 
 .event {
@@ -366,13 +375,13 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;

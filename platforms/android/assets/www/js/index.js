@@ -18,20 +18,46 @@
  */
 var app = {
 
-    device_address: null,
+    device_addresses: ["00:1D:AE:40:24:91"],
     twitter_credentials: null,
-    twitter_friend: null,
     baby_gender: null,
+    daddy_mood: null,
+    available_moods = ['mood1','mood2','mood3'],
+
     tweets: {
-        male: [
-            "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
-            "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
-        ],
-        female: [
-            "Parabéns [friend_screenname] pela linda princesa!",
-            "[friend_screenname] acaba de entrar para o time dos fornecedores! Parabéns e feliz dia dos pais!"
-        ]
+        male: {
+            mood1: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ],
+            mood2: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ],
+            mood3: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ]
+        },
+        female: {
+            mood1: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ],
+            mood2: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ],
+            mood3: [
+                "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+                "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+            ]
+        }
     },
+
+    _discovery_timeout_id: null,
+    _discovery_timeout_timeout: 300, // interval between each discovery round (in miliseconds)
+    _discovery_stopped: false, // true when user clicks on finish button
 
     // Application Constructor
     initialize: function() {
@@ -53,19 +79,14 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        bluetoothSerial.setDeviceDiscoveredListener = app.hack_override_setDeviceDiscoveredListener;
+
+        var deviceready = document.getElementById(id);
+        $('.listening').hide();
+        $('.received').show();
 
         console.log('Received Event: ' + id);
-
-        //volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
-
-
-        //ble.scan([], 50, app.ble_scan_success, function(){console.log('failure scan');});
 
         $("#actions a").click(function(){
             location.reload();
@@ -81,143 +102,234 @@ var app = {
 
         $("#friend-detail #confirm").click(function(){
             app.twitter_friend = $("#friend-screenname").text();
-            $("#friend, #friends, #friend-detail").hide();
-            $("#gender, #genders").show();
+            $("#friend-pick, #friend-list-container, #friend-detail").hide();
+            $("#gender-pick, #gender-list").show();
         });
 
         $("input[name='baby-gender']").change(function(){
             app.baby_gender = $(this).val();
-            $("#finish").show();
+            $("#finish-setup").show();
+            $("#gender-pick, #gender-list").hide();
         });
 
-        $("#finish").click(
+        $("#finish-setup").click(
             function() {
-                $("#gender, #genders").hide();
                 $(this).hide();
                 app.display("CADASTRO FINALIZADO COM SUCESSO!");
-                app.display(app.device_address);
-                app.display(app.twitter_friend);
-                app.display(app.baby_gender);
+                $("#start-discovery").show();
             }
         );
 
-        $("#login").click(
+        $("#start-discovery").click(
+            function() {
+                bluetoothSerial.isEnabled(app.bluetooth_is_enabled, app.bluetooth_is_disabled)
+            }
+        );
+
+        $("#stop-discovery").click(
+            function(){
+                app.bluetooth_stop_discovery();
+            }
+        );
+
+        $("#twitter-connect").click(
             function () {
 
                 $(this).addClass("blink").text("AGUARDE, INICIANDO A CONEXÃO...");
+                TwitterClient.login(app.twitter_login_success, app.twitter_login_failure);
 
-                TwitterClient.login(
-                  function(result) {
-                    $("#login").hide();
-                    $("#friend").show();
-                    app.display('Successful login!');
-                    app.twitter_credentials = result;
-
-                    $("#picture").css("background-image","url('" + result.profileImageUrl.replace("_normal","") + "')");
-                    $("#profile").show();
-
-                    TwitterClient.friends(
-                      function(result) {
-                        app.display('Successful loaded friends!');
-
-                        $(result).each(
-                            function(){
-                                $('<a/>', {
-                                    id: this.screenName,
-                                    text: this.name,
-                                    style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
-                                }).appendTo('#friends .carousel');
-                            }
-                        );
+                return false;
+            }
+        );
 
 
+        $("#message").show();
 
-                        $("#friends .carousel").owlCarousel({
-                            // Most important owl features
-                            items : 4,
-                            singleItem : false,
-                            pagination: false,
-                            navigation: false,
-                            afterInit: function() {
+    },
+    display: function(message) {
+        console.log(JSON.stringify(message));
+        $("#message").text(message);
+    },
 
-                                    $(".owl-item a").click(function(){
-                                            $("#friend-detail #friend-picture").css("background-image", $(this).css("background-image"));
-                                            $("#friend-detail #friend-name").text(this.text);
-                                            $("#friend-detail #friend-screenname").text("@" + this.id);
-                                            $("#friend-detail").show();
-                                        }
-                                    );
+    /*
+        Twitter related functions and callbacks
+    */
+    twitter_login_success: function(result) {
+        $("#twitter-connect").hide();
+        $("#friend-pick").show();
+        app.display('Successful login!');
+        app.twitter_credentials = result;
 
-                                    $("#friend").removeClass("blink").text("ESCOLHA UM AMIGO");
-                                    $("#friends").show();
-                                }
-                            }
-                        );
+        $("#picture").css("background-image","url('" + result.profileImageUrl.replace("_normal","") + "')");
+        $("#profile").show();
 
-                      }, function(error) {
-                        app.display('Error loading friends');
-                        app.display(error);
-                      }
+        TwitterClient.getFriendsList(app.twitter_friends_success, app.twitter_friends_failure);
+
+        $("#twitter-connect").removeClass("blink").text("TWITTER CONNECT");
+
+    },
+    twitter_login_failure: function(error) {
+        app.display('Error logging in. Please try again...');
+        $("#twitter-connect").removeClass("blink").text("TWITTER CONNECT");
+    },
+    twitter_friends_success: function(result) {
+        app.display('Successful loaded friends!');
+
+        $(result).each(
+            function(){
+                $('<a/>', {
+                    id: this.screenName,
+                    text: this.name,
+                    style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
+                }).appendTo('#friend-list-container .carousel');
+            }
+        );
+
+
+
+        $("#friend-list-container .carousel").owlCarousel({
+            items : 4,
+            singleItem : false,
+            pagination: false,
+            navigation: false,
+            afterInit: function() {
+                    $(".owl-item a").click(function(){
+                            $("#friend-detail #friend-picture").css("background-image", $(this).css("background-image"));
+                            $("#friend-detail #friend-name").text(this.text);
+                            $("#friend-detail #friend-screenname").text("@" + this.id);
+                            $("#friend-detail").show();
+                        }
                     );
 
-                    $("login").removeClass("blink").text("TWITTER CONNECT");
-
-                  }, function(error) {
-                    app.display('Error logging in. Please try again...');
-                    $("login").removeClass("blink").text("TWITTER CONNECT");
-                  }
-                );
-            return false;
-        });
-
-
-        $("#scan").click(
-            function () {
-                $(this).addClass("blink").text("AGUARDE, INICIANDO A CÂMERA...");
-
-                cordova.plugins.barcodeScanner.scan(
-                      function (result) {
-                          if(result.format == "QR_CODE" && result.text.indexOf("huggies-pais") > -1) {
-                            app.device_address = result.text.split("|")[1];
-                            app.display("Device reconhecido (" + app.device_address + ")");
-                            $("#login").show();
-                            $("#scan").hide();
-                          } else {
-                            app.display("Device não reconhecido! Tente novamente.");
-                          }
-
-                          $("#scan").removeClass("blink").text("SCAN QRCODE");
-                      },
-                      function (error) {
-                          app.display("Scanning failed: " + error);
-                          $("#scan").removeClass("blink").text("SCAN QRCODE");
-                      }
-                   );
-
-                   return false;
+                    $("#friend-pick").removeClass("blink").text("ESCOLHA UM AMIGO");
+                    $("#friend-list-container").show();
+                }
             }
         );
 
     },
-    display: function(message) {
+    twitter_friends_failure: function(error) {
+        app.display('Error loading friends');
+        app.display(error);
+    },
+    twitter_send_random_tweet: function() {
+        var random = Math.floor((Math.random() * (app.tweets[app.baby_gender].length -1 )) + 0);
+        var tweet = app.tweets[app.baby_gender][random];
+        //tweet = tweet.replace("[friend_screenname]", app.twitter_friend);
 
-        console.log(message);
+        console.log("Random tweet: " + tweet);
 
-        var display = document.getElementById("message"), // the message div
-            lineBreak = document.createElement("br"),     // a line break
-            label = document.createTextNode(message);     // create the label
-
-        display.appendChild(lineBreak);          // add a line break
-        display.appendChild(label);              // add the message node
+        TwitterClient.updateStatus(tweet, app.twitter_update_status_success, app.twitter_update_status_failure);
+    },
+    twitter_update_status_success: function(result) {
+        console.log(result);
+    },
+    twitter_update_status_failure: function(error) {
+        console.log(error);
     },
 
-    ble_scan_success: function(device) {
-        console.log(JSON.stringify(device));
-        ble.connect(device.id, app.ble_connect_success, function(){console.log('failure connection')})
+    /*
+        QRCODE Scan related functions and callbacks
+    */
+    qrcode_scan_success: function (result) {
+
+        if(result.format == "QR_CODE" && result.text.indexOf("huggies-pais") > -1) {
+            app.device_address = result.text.split("|")[1];
+            app.display("Device reconhecido (" + app.device_address + ")");
+            $("#twitter-connect").show();
+            $("#scan-qrcode").hide();
+        } else {
+            app.display("Device não reconhecido! Tente novamente.");
+        }
+
+        $("#scan-qrcode").removeClass("blink").text("SCAN QRCODE");
     },
-    ble_connect_success: function(device) {
-        console.log(JSON.stringify(device));
-    }
+    qrcode_scan_failure: function (error) {
+        app.display("Scanning failed: " + error);
+        $("#scan-qrcode").removeClass("blink").text("SCAN QRCODE");
+    },
+
+    /*
+        Bluetooth related functions and callbacks
+    */
+    bluetooth_start_discovery: function() {
+
+        if (app._discovery_stopped) {
+            window.clearTimeout(app._discovery_timeout_id);
+            app._discovery_stopped = false;
+            return;
+        }
+        else {
+            app._discovery_timeout_id = window.setTimeout(
+
+                function() {
+
+                    if (app._discovery_stopped) {
+                        window.clearTimeout(app._discovery_timeout_id);
+                        app._discovery_stopped = false;
+                        return;
+                    }
+
+                    $("#start-discovery").hide();
+                    $("#finish-discovery").show();
+                    app.display("Buscando o sinal do device...");
+                    bluetoothSerial.setDeviceDiscoveredListener(app.bluetooth_on_device_discovered);
+                    bluetoothSerial.discoverUnpaired(app.bluetooth_discovery_finished_success, app.bluetooth_discovery_finished_failure);
+                },
+                app._discovery_timeout_timeout
+            );
+        }
+    },
+    bluetooth_stop_discovery: function() {
+        app._discovery_stopped = true;
+        bluetoothSerial.clearDeviceDiscoveredListener();
+        window.clearTimeout(app._discovery_timeout_id);
+    },
+    bluetooth_discovery_finished_success: function(devices) {
+        $("#start-discovery").show();
+        $("#finish-discovery").hide();
+        app.bluetooth_start_discovery();
+    },
+    bluetooth_discovery_finished_failure: function(error) {
+        console.log(error);
+        app.bluetooth_start_discovery();
+    },
+    bluetooth_is_enabled: function() {
+        app.bluetooth_start_discovery();
+    },
+    bluetooth_on_device_discovered: function(device) {
+        if(device.address == app.device_address) {
+            app.display("SINAL RECONHECIDO... ENVIANDO TWEET!");
+            app.bluetooth_stop_discovery();
+
+            $("#start-discovery").hide();
+            $("#finish-discovery").hide();
+
+            app.twitter_send_random_tweet();
+
+        }
+
+        console.log(device);
+    },
+    bluetooth_enable_success: function() {
+        app.bluetooth_start_discovery();
+    },
+    bluetooth_enable_failure: function() {
+        app.display("Não foi possível habilitar o bluetooth... por favor tente novamente!");
+    },
+    bluetooth_is_disabled: function(){
+        app.display("Bluetooth is disabled, please enable first!");
+        bluetoothSerial.enable(app.bluetooth_enable_success, app.bluetooth_enable_failure);
+    },
+
+
+    hack_override_setDeviceDiscoveredListener: function (notify) {
+          if (typeof notify != 'function')
+              throw 'BluetoothSerial.setDeviceDiscoveredListener: Callback not a function'
+
+          cordova.exec(notify, null, "BluetoothSerial", "setDeviceDiscoveredListener", []);
+      },
+
 };
 
 
