@@ -8,355 +8,37 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="331583fa-4caf-4780-af3f-290d2e035ebb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/twitter-client.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/plugins/twitter-connect-plugin/www/TwitterConnect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/manifestwebdesign/twitterconnect/TwitterConnect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter-connect-plugin/helloworld-twitter.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Fabric" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Headers" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Modules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Versions/A/Fabric" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Versions/A/Headers/Fabric.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Versions/A/Modules/module.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Versions/A/Resources/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/Versions/Current" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/Fabric.framework/run" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterConnect.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterConnect.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Headers" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Modules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/TwitterKit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTAppearance.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTAuthenticateButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTContactAccessAuthorizationStatus.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTContacts.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTContactsUploadResult.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTErrors.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/DGTUser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/Digits.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRAPIClient.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRAPIErrorCode.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRAuthConfig.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRAuthSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRComposer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRConstants.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRLogInButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTROAuthSigning.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRSearchTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRShareEmailViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTimelineType.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTimelineViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTweet.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTweetTableViewCell.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTweetView.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRTweetViewDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRUser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TWTRUserTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/Twitter.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Headers/TwitterKit.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Modules/module.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTAuthViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTConfirmViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTPinCodeFormViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTUploadContactsViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ar.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/country-codes.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/da.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/de.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/en-gb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/en.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/es.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fa.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/he.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/hi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/hu.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/id.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/it.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ja.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ko.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ms.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/nb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/nl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/pl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/pt.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ru.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/sv.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/th.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/tl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/tr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ur.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/zh-Hans.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/zh-Hant.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/TFSScribe.momd/VersionInfo.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ar.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/da.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/de.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/en-gb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/en.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/es.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fa.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/he.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/hi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/hu.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/id.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/it.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ja.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ko.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ms.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/nb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/nl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/pl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/pt.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ru.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/sv.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/th.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/tl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/tr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ur.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/zh-Hans.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/zh-Hant.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/A/TwitterKit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/twitter-connect-plugin/TwitterKit.framework/Versions/Current" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/www/plugins/twitter-connect-plugin/www/TwitterConnect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/android/TwitterConnect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/android/twitter.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Fabric" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Headers" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Modules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Versions/A/Fabric" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Versions/A/Headers/Fabric.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Versions/A/Modules/module.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Versions/A/Resources/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/Versions/Current" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/Fabric.framework/run" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterConnect.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterConnect.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Headers" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Modules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/TwitterKit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTAppearance.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTAuthenticateButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTContactAccessAuthorizationStatus.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTContacts.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTContactsUploadResult.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTErrors.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/DGTUser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/Digits.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRAPIClient.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRAPIErrorCode.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRAuthConfig.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRAuthSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRComposer.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRConstants.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRLogInButton.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTROAuthSigning.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRSearchTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRSession.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRShareEmailViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTimelineType.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTimelineViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTweet.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTweetTableViewCell.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTweetView.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRTweetViewDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRUser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TWTRUserTimelineDataSource.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/Twitter.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Headers/TwitterKit.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Modules/module.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTAuthViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTConfirmViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTPinCodeFormViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/DGTUploadContactsViewController.nib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/addressbook-find-friends@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ar.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/country-codes.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/da.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/de.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-icon@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/digits-logo-name@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/en-gb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/en.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/es.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fa.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/fr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/he.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/hi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/hu.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/id.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/it.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ja.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ko.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ms.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/nb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/nl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/pl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/pt.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ru.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/sv.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/th.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/tl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/tr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/unable-phone@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/ur.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/zh-Hans.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/DigitsResources.bundle/zh-Hant.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/TFSScribe.momd/TFSScribe.mom" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/TFSScribe.momd/VersionInfo.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ar.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/da.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/de.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/emailshare@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/en-gb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/en.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/es.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fa.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/fr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/he.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/hi.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/hu.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/id.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/it.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ja.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ko.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ms.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/nb.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/nl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/pl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/pt.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ru.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/sv.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/th.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/tl.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/tr.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo-white@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-logo@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo-error@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-place-holder-photo@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-dark@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-retweeted-by-light@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified-pressed@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/twttr-icn-tweet-verified@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/ur.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/zh-Hans.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle/zh-Hant.lproj/Localizable.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/A/TwitterKit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/src/ios/TwitterKit.framework/Versions/Current" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/twitter-connect-plugin/www/TwitterConnect.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/AjaxLoader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/grabbing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClientApiClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.transitions.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/twitter-client.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/Hello World/Hello World-Info.plist" afterPath="$PROJECT_DIR$/../ios/Hello World/Hello World-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/android.json" afterPath="$PROJECT_DIR$/../../plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClient.java" afterPath="$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClient.java" afterPath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" afterPath="$PROJECT_DIR$/assets/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" afterPath="$PROJECT_DIR$/../ios/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" afterPath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/config.xml" afterPath="$PROJECT_DIR$/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/Hello World/config.xml" afterPath="$PROJECT_DIR$/../ios/Hello World/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/../ios/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/fetch.json" afterPath="$PROJECT_DIR$/../../plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/css/index.css" afterPath="$PROJECT_DIR$/assets/www/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/css/index.css" afterPath="$PROJECT_DIR$/../../www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="$PROJECT_DIR$/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/index.html" afterPath="$PROJECT_DIR$/../../www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/index.js" afterPath="$PROJECT_DIR$/assets/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/ios.json" afterPath="$PROJECT_DIR$/../../plugins/ios.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/js/index.js" afterPath="$PROJECT_DIR$/../../www/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/Hello World.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../ios/Hello World.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="android.iws" />
@@ -397,11 +79,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CordovaLib/build.gradle">
+      <file leaf-file-name="TwitterClient.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterClientApiClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClientApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3504673">
+              <caret line="25" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/xml/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="102" selection-start-line="99" selection-start-column="102" selection-end-line="99" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -1380,7 +1084,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5749105559000" />
+        <entry key="$PROJECT_DIR$" value="5749123070000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1701,13 +1405,16 @@
         <option value="$PROJECT_DIR$/assets/www/plugins/com.megster.cordova.bluetoothserial/www/bluetoothSerial.js" />
         <option value="$PROJECT_DIR$/assets/www/plugins/com.oauthio.plugins.oauthio/www/dist/oauth.js" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/res/xml/config.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/assets/www/js/index.js" />
-        <option value="$PROJECT_DIR$/assets/www/css/index.css" />
-        <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/assets/www/js/twitter-client.js" />
         <option value="$PROJECT_DIR$/src/com/manifestwebdesign/twitterconnect/TwitterConnect.java" />
+        <option value="$PROJECT_DIR$/assets/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/xml/config.xml" />
+        <option value="$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClientApiClient.java" />
+        <option value="$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClient.java" />
+        <option value="$PROJECT_DIR$/assets/www/js/index.js" />
+        <option value="$PROJECT_DIR$/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/assets/www/css/index.css" />
       </list>
     </option>
   </component>
@@ -1784,6 +1491,124 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitterclient" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2023,12 +1848,12 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3069467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20193861" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983023" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23439878" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30593607" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2051,11 +1876,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="android">
-        <watch expression="device.getName()" language="JAVA" custom="" />
+        <watch expression="userResult.response.getBody()" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -2081,7 +1906,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2123,7 +1953,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2277,22 +2112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/xml/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8569157">
-          <caret line="95" column="102" selection-start-line="95" selection-start-column="102" selection-end-line="95" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/twitter-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35824743">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.327319">
@@ -2309,50 +2128,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/CordovaLib/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96649486">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#900#923#0" expanded="true" />
-            <element signature="e#1159#1182#0" expanded="true" />
-            <element signature="e#1983#2003#0" expanded="true" />
-            <element signature="e#2344#2364#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/css/index.css">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6958763">
-          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.5484897">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7582418">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.259901">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7196262">
+          <caret line="156" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/xml/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="102" selection-start-line="99" selection-start-column="102" selection-end-line="99" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5953608">
-          <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.5607477">
+          <caret line="104" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CordovaLib/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61214954">
+          <caret line="134" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#2405#3427#0" expanded="true" />
+            <element signature="e#3426#3427#0" expanded="true" />
+            <element signature="e#3530#3678#0" expanded="true" />
+            <element signature="e#3677#3678#0" expanded="true" />
+            <element signature="e#3807#4931#0" expanded="true" />
+            <element signature="e#3910#3916#0" expanded="true" />
+            <element signature="e#4930#4931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/snippet/cordova/twitterclient/TwitterClientApiClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3504673">
+          <caret line="25" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

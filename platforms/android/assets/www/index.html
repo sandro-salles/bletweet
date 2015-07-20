@@ -30,6 +30,8 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.theme.css">
         <title>Hello World</title>
     </head>
     <body>
@@ -39,17 +41,22 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">PROTÓTIPO - DIA DOS PAIS</p>
             </div>
-            <div id="profile">
+            <div id="profile" style="display: none">
                 <div id="picture"></div>
-                <div id="actions">
+                <div id="actions" style="display: none">
                     <a href="#">desconectar</a>
                 </div>
             </div>
         </div>
-        <a href="#" id="scan">SCAN QRCODE</a>
-        <a href="#" id="login" style="display: none">TWITTER CONNECT</a>
+        <a href="#" id="scan" class="step">SCAN QRCODE</a>
+        <a href="#" id="login" style="display: none" class="step">TWITTER CONNECT</a>
+        <span href="#" id="friend" style="display: none" class="step">ESCOLHA UM AMIGO</span>
+        <div id="friends" class="owl-carousel" style="display: none"></div>
+        <span href="#" id="gender" style="display: none" class="step">É MENINO OU MENINA?</span>
         <div id="message"></div>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();

@@ -4,9 +4,21 @@
     <feature name="BLE">
         <param name="android-package" value="com.megster.cordova.ble.central.BLECentralPlugin" />
     </feature>
+    <feature name="BluetoothSerial">
+        <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
+    </feature>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <feature name="TwitterClient">
+        <param name="android-package" value="br.com.snippet.cordova.twitterclient.TwitterClient" />
     </feature>
     <allow-intent href="market:*" />
     <name>Hello World</name>
@@ -83,18 +95,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
-    <feature name="BluetoothSerial">
-        <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
-    </feature>
+
     <preference name="TwitterConsumerKey" value="tLdTn6wTmZsgP1AKsXbDf6voq" />
     <preference name="TwitterConsumerSecret" value="1i2uwGfqseaUj9vXp9TdQ0UBHuXUWLU8joN4Rclb7rSXGcpxwG" />
-    <feature name="BarcodeScanner">
-        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
-    </feature>
-    <feature name="TwitterClient">
-        <param name="android-package" value="br.com.snippet.cordova.twitterclient.TwitterClient" />
-    </feature>
 </widget>

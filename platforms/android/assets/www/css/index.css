@@ -50,83 +50,111 @@ body {
 #profile {
     display: block;
     position: absolute;
-    right: 20px;
     top: 20px;
     margin: 0;
     padding: 2px;
+    width: 100%
 }
 
 #picture {
     background-image: url("https://pbs.twimg.com/profile_images/1183989734/OgAAAK7zGHQ70phpo_QeYndYJr…TAUaCBTviktSctKxFjY1_h6AuQPgAm1T1UIS0Wyef7VDICqp6uRpra3HYNc3k_400x400.jpg");
     width: 70px;
     height: 70px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     -webkit-border-radius: 99em;
     -moz-border-radius: 99em;
     border-radius: 99em;
     border: 1px solid #636060;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
     z-index: 99999;
 }
 
+.owl-item div {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 1px solid #636060;
+}
+
+
 #actions {
     background-color: #ffffff;
-    width: 275px;
-    height: 48px;
-    margin: 11px 31px 0 0;
+    height: 28px;
+    margin: 10px 30px 0 30px;
     border-radius: 99em;
     -webkit-border-radius: 99em;
     opacity: 0.9;
+    text-align: left;
+    padding: 12px 0 0 20px;
 }
 
-#login {
+
+.step {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     text-align: center;
     display: block;
-    background-color: #55acee;
     color: #ffffff;
     margin: 30px;
     padding: 15px;
     position: relative;
 }
 
-#login::before {
+.step::before {
     display: block;
     float: left;
-    content: "2";
-    font-size: 4em;
+    font-size: 5.1em;
     font-weight: bold;
-    top: -5px;
+    top: -13px;
     position: absolute;
-    left: 4px;
+    left: -3px;
 }
 
 #scan {
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    text-align: center;
-    display: block;
     background-color: #fd5c63;
-    color: #ffffff;
-    margin: 30px;
-    padding: 15px;
-    position: relative;
 }
 
 #scan::before {
-    display: block;
-    float: left;
     content: "1";
-    font-size: 4em;
-    font-weight: bold;
-    top: -5px;
-    position: absolute;
-    left: 4px;
+}
+
+#login {
+    background-color: #55acee;
+}
+
+#login::before {
+    content: "2";
+}
+
+#friend {
+    background-color: #fd9f3e;
+}
+
+#friend::before {
+    content: "3";
+}
+
+#gender {
+    background-color: #fbb040;
+}
+
+#gender::before {
+    content: "4";
+}
+
+#friends {
+    display: block;
+    margin: 30px;
+    position: relative;
 }
 
 #message {

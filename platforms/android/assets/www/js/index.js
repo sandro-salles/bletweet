@@ -71,10 +71,45 @@ var app = {
         var loginButton = document.getElementById("login");
         loginButton.onclick = function () {
 
-            TwitterConnect.login(
+            TwitterClient.login(
               function(result) {
                 app.display('Successful login!');
                 app.twitter_credentials = result;
+
+                document.getElementById("picture").style.backgroundImage = "url('" + result.profileImageUrl.replace("_normal","") + "')";
+                document.getElementById("profile").style.display = "block";
+                document.getElementById("login").style.display = "none";
+                document.getElementById("friend").style.display = "block";
+
+
+                TwitterClient.friends(
+                  function(result) {
+                    app.display('Successful loaded friends!');
+                    console.log(result);
+                    $(result).each(
+                        function(){
+                            $('<div/>', {
+                                id: this.screenName,
+                                text: this.name,
+                                style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
+                            }).appendTo('#friends');
+                        }
+                    );
+
+                    $("#friends").owlCarousel({
+                        // Most important owl features
+                        items : 5,
+                        singleItem : false
+                        }
+                    );
+
+                  }, function(error) {
+                    app.display('Error loading friends');
+                    app.display(error);
+                  }
+                );
+
+
               }, function(error) {
                 app.display('Error logging in');
                 app.display(error);

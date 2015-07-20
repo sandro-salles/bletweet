@@ -55,12 +55,12 @@
 		0C6BBC916B2143B98DC7C923 /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */; };
 		CE4BEBF24D1843758FFF34D1 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03CCE500344608A3C62D5F /* libiconv.dylib */; };
 		BF3ACF0C31454C708763DD58 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */; };
-		B2953F4798F4401CB84A17E0 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E779AE7377E24734881EA349 /* TwitterClient.m */; };
-		DE4D93FBC51345DE99200E15 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E6CC3207D4B8E9FA207A9 /* TwitterKitResources.bundle */; };
-		F21EFFEF964E4DC7B3B4F8AB /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBBCB0E743D7467E9476B0CC /* Fabric.framework */; };
-		0665E30B317C4675AC31B8C4 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6465FDBB2A3E496BA6A91D92 /* TwitterKit.framework */; };
-		313A4F496A7F457EB95D7C34 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC782833CB294B84B47D0B4D /* CoreText.framework */; };
-		B03B4E3CB4CD48DEB34FFD7D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A0EB99B4004DB0A42A9B47 /* AddressBook.framework */; };
+		E1A225205C8B4AC5AACEC4AF /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */; };
+		8A611BA09CC84DD0B931900A /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */; };
+		28CFA00F21EE48488B3D7D53 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B17AAFE0BAF424C82A0550B /* Fabric.framework */; };
+		43DE8880680C481B9E7B7DC2 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57BDF7041CA44C2A45A013F /* TwitterKit.framework */; };
+		91A775980D604517A32D5DB5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */; };
+		5F6D5168A5EE4ADFA4A6778B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,13 +153,13 @@
 		8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "scannerOverlay.xib"; path = "scannerOverlay.xib"; sourceTree = "<group>"; fileEncoding = 4; };
 		EC03CCE500344608A3C62D5F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 		DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		E779AE7377E24734881EA349 /* TwitterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterClient.m"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		2CB9EB6245CD40F6BB98EF26 /* TwitterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterClient.h"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		8E0E6CC3207D4B8E9FA207A9 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "TwitterKitResources.bundle"; path = "TwitterKitResources.bundle"; sourceTree = "<group>"; };
-		EBBCB0E743D7467E9476B0CC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fabric.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/Fabric.framework"; sourceTree = "<group>"; };
-		6465FDBB2A3E496BA6A91D92 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "TwitterKit.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/TwitterKit.framework"; sourceTree = "<group>"; };
-		DC782833CB294B84B47D0B4D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		E1A0EB99B4004DB0A42A9B47 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterClient.m"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		621F79A1CE9142C6809FB144 /* TwitterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterClient.h"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "TwitterKitResources.bundle"; path = "TwitterKitResources.bundle"; sourceTree = "<group>"; };
+		2B17AAFE0BAF424C82A0550B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fabric.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/Fabric.framework"; sourceTree = "<group>"; };
+		B57BDF7041CA44C2A45A013F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "TwitterKit.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/TwitterKit.framework"; sourceTree = "<group>"; };
+		F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +177,10 @@
 				07B8E99F98814BA3B8C3C761 /* QuartzCore.framework in Frameworks */,
 				CE4BEBF24D1843758FFF34D1 /* libiconv.dylib in Frameworks */,
 				BF3ACF0C31454C708763DD58 /* CoreVideo.framework in Frameworks */,
-				F21EFFEF964E4DC7B3B4F8AB /* Fabric.framework in Frameworks */,
-				0665E30B317C4675AC31B8C4 /* TwitterKit.framework in Frameworks */,
-				313A4F496A7F457EB95D7C34 /* CoreText.framework in Frameworks */,
-				B03B4E3CB4CD48DEB34FFD7D /* AddressBook.framework in Frameworks */,
+				28CFA00F21EE48488B3D7D53 /* Fabric.framework in Frameworks */,
+				43DE8880680C481B9E7B7DC2 /* TwitterKit.framework in Frameworks */,
+				91A775980D604517A32D5DB5 /* CoreText.framework in Frameworks */,
+				5F6D5168A5EE4ADFA4A6778B /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Hello World-Info.plist */,
 				8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */,
-				8E0E6CC3207D4B8E9FA207A9 /* TwitterKitResources.bundle */,
+				95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */,
 			);
 			name = Resources;
 			path = "Hello World/Resources";
@@ -261,10 +261,10 @@
 				3B64E3E549D249DCB361E2E6 /* QuartzCore.framework */,
 				EC03CCE500344608A3C62D5F /* libiconv.dylib */,
 				DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */,
-				EBBCB0E743D7467E9476B0CC /* Fabric.framework */,
-				6465FDBB2A3E496BA6A91D92 /* TwitterKit.framework */,
-				DC782833CB294B84B47D0B4D /* CoreText.framework */,
-				E1A0EB99B4004DB0A42A9B47 /* AddressBook.framework */,
+				2B17AAFE0BAF424C82A0550B /* Fabric.framework */,
+				B57BDF7041CA44C2A45A013F /* TwitterKit.framework */,
+				F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */,
+				CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,8 +302,8 @@
 				A9043C3B0B814179AA965B73 /* CDVBarcodeScanner.mm */,
 				84FDCEF727C84641B3CC926C /* zxing-all-in-one.cpp */,
 				2D26E54E54554F12B5BD4934 /* zxing-all-in-one.h */,
-				E779AE7377E24734881EA349 /* TwitterClient.m */,
-				2CB9EB6245CD40F6BB98EF26 /* TwitterClient.h */,
+				7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */,
+				621F79A1CE9142C6809FB144 /* TwitterClient.h */,
 			);
 			name = Plugins;
 			path = "Hello World/Plugins";
@@ -463,7 +463,7 @@
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
 				0C6BBC916B2143B98DC7C923 /* scannerOverlay.xib in Resources */,
-				DE4D93FBC51345DE99200E15 /* TwitterKitResources.bundle in Resources */,
+				8A611BA09CC84DD0B931900A /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +504,7 @@
 				25F9297FD60B42158239E451 /* CBPeripheral+Extensions.m in Sources */,
 				7453F635A41B466EB2001E46 /* CDVBarcodeScanner.mm in Resources */,
 				64DBE65E5C564AA28B79AF13 /* zxing-all-in-one.cpp in Resources */,
-				B2953F4798F4401CB84A17E0 /* TwitterClient.m in Sources */,
+				E1A225205C8B4AC5AACEC4AF /* TwitterClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +558,8 @@
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 				);
 			};
 			name = Debug;
@@ -595,6 +597,8 @@
 					"$(inherited)",
 					"\"Hello World/Plugins/twitter-connect-plugin\"",
 					"\"Hello World/Plugins/twitter-connect-plugin\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",

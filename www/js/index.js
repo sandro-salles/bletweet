@@ -17,6 +17,22 @@
  * under the License.
  */
 var app = {
+
+    device_address: null,
+    twitter_credentials: null,
+    twitter_friend: null,
+    baby_gender: null,
+    tweets: {
+        male: [
+            "Parabéns [friend_screenname] pelo lindo filhão! Feliz dia dos pais :)",
+            "As garotas que se cuidem, o menino do [friend_screenname] acabou de chegar ;) Feliz dia dos pais!"
+        ],
+        female: [
+            "Parabéns [friend_screenname] pela linda princesa!",
+            "[friend_screenname] acaba de entrar para o time dos fornecedores! Parabéns e feliz dia dos pais!"
+        ]
+    },
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -45,13 +61,83 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        console.log('test 52');
 
-        app.display(JSON.stringify(volumehijack));
-        volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
+        //volumehijack.listen(function(evnt){ app.display(evnt);}, function(evnt){ app.display(evnt);});
 
 
-        ble.scan([], 50, app.ble_scan_success, function(){console.log('failure scan');});
+        //ble.scan([], 50, app.ble_scan_success, function(){console.log('failure scan');});
+
+
+        var loginButton = document.getElementById("login");
+        loginButton.onclick = function () {
+
+            TwitterClient.login(
+              function(result) {
+                app.display('Successful login!');
+                app.twitter_credentials = result;
+
+                document.getElementById("picture").style.backgroundImage = "url('" + result.profileImageUrl.replace("_normal","") + "')";
+                document.getElementById("profile").style.display = "block";
+                document.getElementById("login").style.display = "none";
+                document.getElementById("friend").style.display = "block";
+
+
+                TwitterClient.friends(
+                  function(result) {
+                    app.display('Successful loaded friends!');
+                    console.log(result);
+                    $(result).each(
+                        function(){
+                            $('<div/>', {
+                                id: this.screenName,
+                                text: this.name,
+                                style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
+                            }).appendTo('#friends');
+                        }
+                    );
+
+                    $("#friends").owlCarousel({
+                        // Most important owl features
+                        items : 5,
+                        singleItem : false
+                        }
+                    );
+
+                  }, function(error) {
+                    app.display('Error loading friends');
+                    app.display(error);
+                  }
+                );
+
+
+              }, function(error) {
+                app.display('Error logging in');
+                app.display(error);
+              }
+            );
+            return false;
+        }
+
+        var scanButton = document.getElementById("scan");
+        scanButton.onclick = function () {
+            cordova.plugins.barcodeScanner.scan(
+                  function (result) {
+                      if(result.format == "QR_CODE" && result.text.indexOf("huggies-pais") > -1) {
+                        app.device_address = result.text.split("|")[1];
+                        app.display("Device reconhecido (" + app.device_address + ")");
+                        loginButton.style.display = "block";
+                        scanButton.style.display = "none";
+                      } else {
+                        app.display("Device não reconhecido! Tente novamente.");
+                      }
+                  },
+                  function (error) {
+                      app.display("Scanning failed: " + error);
+                  }
+               );
+
+               return false;
+        }
 
     },
     display: function(message) {
