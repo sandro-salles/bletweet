@@ -37,7 +37,7 @@
     <body>
         <div class="app">
             <h1>HUGGIES</h1>
-            <div id="deviceready" class="blink">
+            <div id="deviceready">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">PROTÓTIPO - DIA DOS PAIS</p>
             </div>
@@ -50,9 +50,31 @@
         </div>
         <a href="#" id="scan" class="step">SCAN QRCODE</a>
         <a href="#" id="login" style="display: none" class="step">TWITTER CONNECT</a>
-        <span href="#" id="friend" style="display: none" class="step">ESCOLHA UM AMIGO</span>
-        <div id="friends" class="owl-carousel" style="display: none"></div>
+        <span href="#" id="friend" style="display: none" class="step blink">AGUARDE, CARREGANDO AMIGOS...</span>
+        <div id="friends" style="display: none">
+            <div class="carousel"></div>
+        </div>
+        <div id="friend-detail" style="display: none">
+            <span id="friend-picture"></span>
+            <span id="friend-name"></span>
+            <span id="friend-screenname"></span>
+            <ul>
+                <li><a href="#" id="cancel">Cancelar</a></li>
+                <li><a href="#" id="confirm">Confirmar</a></li>
+            </ul>
+        </div>
         <span href="#" id="gender" style="display: none" class="step">É MENINO OU MENINA?</span>
+        <ul id="genders" style="display: none">
+            <li>
+                <input name="baby-gender" type="radio" id="male" value="male">
+                <label for="male">Menino</label>
+            </li>
+            <li>
+                <input name="baby-gender" type="radio" id="female" value="female">
+                <label for="female">Menina</label>
+            </li>
+        </ul>
+        <span href="#" id="finish" style="display: none" class="step">FINALIZAR</span>
         <div id="message"></div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>

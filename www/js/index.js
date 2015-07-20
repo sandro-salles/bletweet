@@ -67,77 +67,136 @@ var app = {
 
         //ble.scan([], 50, app.ble_scan_success, function(){console.log('failure scan');});
 
+        $("#actions a").click(function(){
+            location.reload();
+        });
 
-        var loginButton = document.getElementById("login");
-        loginButton.onclick = function () {
+        $("#picture").click(function(){
+            $("#actions").toggle();
+        });
 
-            TwitterClient.login(
-              function(result) {
-                app.display('Successful login!');
-                app.twitter_credentials = result;
+        $("#friend-detail #cancel").click(function(){
+            $("#friend-detail").hide();
+        });
 
-                document.getElementById("picture").style.backgroundImage = "url('" + result.profileImageUrl.replace("_normal","") + "')";
-                document.getElementById("profile").style.display = "block";
-                document.getElementById("login").style.display = "none";
-                document.getElementById("friend").style.display = "block";
+        $("#friend-detail #confirm").click(function(){
+            app.twitter_friend = $("#friend-screenname").text();
+            $("#friend, #friends, #friend-detail").hide();
+            $("#gender, #genders").show();
+        });
 
+        $("input[name='baby-gender']").change(function(){
+            app.baby_gender = $(this).val();
+            $("#finish").show();
+        });
 
-                TwitterClient.friends(
+        $("#finish").click(
+            function() {
+                $("#gender, #genders").hide();
+                $(this).hide();
+                app.display("CADASTRO FINALIZADO COM SUCESSO!");
+                app.display(app.device_address);
+                app.display(app.twitter_friend);
+                app.display(app.baby_gender);
+            }
+        );
+
+        $("#login").click(
+            function () {
+
+                $(this).addClass("blink").text("AGUARDE, INICIANDO A CONEXÃO...");
+
+                TwitterClient.login(
                   function(result) {
-                    app.display('Successful loaded friends!');
-                    console.log(result);
-                    $(result).each(
-                        function(){
-                            $('<div/>', {
-                                id: this.screenName,
-                                text: this.name,
-                                style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
-                            }).appendTo('#friends');
-                        }
+                    $("#login").hide();
+                    $("#friend").show();
+                    app.display('Successful login!');
+                    app.twitter_credentials = result;
+
+                    $("#picture").css("background-image","url('" + result.profileImageUrl.replace("_normal","") + "')");
+                    $("#profile").show();
+
+                    TwitterClient.friends(
+                      function(result) {
+                        app.display('Successful loaded friends!');
+
+                        $(result).each(
+                            function(){
+                                $('<a/>', {
+                                    id: this.screenName,
+                                    text: this.name,
+                                    style: "background-image: url('" + this.profileImageUrl.replace("_normal","") + "');"
+                                }).appendTo('#friends .carousel');
+                            }
+                        );
+
+
+
+                        $("#friends .carousel").owlCarousel({
+                            // Most important owl features
+                            items : 4,
+                            singleItem : false,
+                            pagination: false,
+                            navigation: false,
+                            afterInit: function() {
+
+                                    $(".owl-item a").click(function(){
+                                            $("#friend-detail #friend-picture").css("background-image", $(this).css("background-image"));
+                                            $("#friend-detail #friend-name").text(this.text);
+                                            $("#friend-detail #friend-screenname").text("@" + this.id);
+                                            $("#friend-detail").show();
+                                        }
+                                    );
+
+                                    $("#friend").removeClass("blink").text("ESCOLHA UM AMIGO");
+                                    $("#friends").show();
+                                }
+                            }
+                        );
+
+                      }, function(error) {
+                        app.display('Error loading friends');
+                        app.display(error);
+                      }
                     );
 
-                    $("#friends").owlCarousel({
-                        // Most important owl features
-                        items : 5,
-                        singleItem : false
-                        }
-                    );
+                    $("login").removeClass("blink").text("TWITTER CONNECT");
 
                   }, function(error) {
-                    app.display('Error loading friends');
-                    app.display(error);
+                    app.display('Error logging in. Please try again...');
+                    $("login").removeClass("blink").text("TWITTER CONNECT");
                   }
                 );
-
-
-              }, function(error) {
-                app.display('Error logging in');
-                app.display(error);
-              }
-            );
             return false;
-        }
+        });
 
-        var scanButton = document.getElementById("scan");
-        scanButton.onclick = function () {
-            cordova.plugins.barcodeScanner.scan(
-                  function (result) {
-                      if(result.format == "QR_CODE" && result.text.indexOf("huggies-pais") > -1) {
-                        app.device_address = result.text.split("|")[1];
-                        app.display("Device reconhecido (" + app.device_address + ")");
-                        loginButton.style.display = "block";
-                        scanButton.style.display = "none";
-                      } else {
-                        app.display("Device não reconhecido! Tente novamente.");
+
+        $("#scan").click(
+            function () {
+                $(this).addClass("blink").text("AGUARDE, INICIANDO A CÂMERA...");
+
+                cordova.plugins.barcodeScanner.scan(
+                      function (result) {
+                          if(result.format == "QR_CODE" && result.text.indexOf("huggies-pais") > -1) {
+                            app.device_address = result.text.split("|")[1];
+                            app.display("Device reconhecido (" + app.device_address + ")");
+                            $("#login").show();
+                            $("#scan").hide();
+                          } else {
+                            app.display("Device não reconhecido! Tente novamente.");
+                          }
+
+                          $("#scan").removeClass("blink").text("SCAN QRCODE");
+                      },
+                      function (error) {
+                          app.display("Scanning failed: " + error);
+                          $("#scan").removeClass("blink").text("SCAN QRCODE");
                       }
-                  },
-                  function (error) {
-                      app.display("Scanning failed: " + error);
-                  }
-               );
+                   );
 
-               return false;
-        }
+                   return false;
+            }
+        );
 
     },
     display: function(message) {
