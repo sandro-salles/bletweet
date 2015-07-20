@@ -179,5 +179,12 @@
         <string>{768, 1024}</string>
       </dict>
     </array>
+    <key>Fabric</key>
+    <dict>
+      <key>APIKey</key>
+      <string>68011007b78f5610987b2f45febde86140a7ec14</string>
+      <key>Kits</key>
+      <array/>
+    </dict>
   </dict>
 </plist>

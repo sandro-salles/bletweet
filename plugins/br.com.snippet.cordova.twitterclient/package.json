@@ -1,0 +1,37 @@
+{
+  "name": "br.com.snippet.cordova.twitterclient",
+  "version": "0.1.0",
+  "description": "Twitter Client Plugin - Allows single-sign on logins using Twitter + API calls",
+  "cordova": {
+    "id": "br.com.snippet.cordova.twitterclient",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandro-salles/twitter-client-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "twitter",
+    "login",
+    "connect",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">3.9.9"
+    }
+  ],
+  "author": "Nathan Kerr",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/sandro-salles/twitter-client-plugin/issues"
+  },
+  "homepage": "https://github.com/sandro-salles/twitter-client-plugin#readme"
+}

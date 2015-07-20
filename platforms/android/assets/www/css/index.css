@@ -24,18 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
+    background-color:#ffffff;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -47,17 +36,109 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    background:url(../img/logo.jpg) no-repeat center top; /* 170px x 200px */
+    width:100%;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+    padding:260px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:0px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
+
+#profile {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin: 0;
+    padding: 2px;
+}
+
+#picture {
+    background-image: url("https://pbs.twimg.com/profile_images/1183989734/OgAAAK7zGHQ70phpo_QeYndYJr…TAUaCBTviktSctKxFjY1_h6AuQPgAm1T1UIS0Wyef7VDICqp6uRpra3HYNc3k_400x400.jpg");
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 1px solid #636060;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+#actions {
+    background-color: #ffffff;
+    width: 275px;
+    height: 48px;
+    margin: 11px 31px 0 0;
+    border-radius: 99em;
+    -webkit-border-radius: 99em;
+    opacity: 0.9;
+}
+
+#login {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    display: block;
+    background-color: #55acee;
+    color: #ffffff;
+    margin: 30px;
+    padding: 15px;
+    position: relative;
+}
+
+#login::before {
+    display: block;
+    float: left;
+    content: "2";
+    font-size: 4em;
+    font-weight: bold;
+    top: -5px;
+    position: absolute;
+    left: 4px;
+}
+
+#scan {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    display: block;
+    background-color: #fd5c63;
+    color: #ffffff;
+    margin: 30px;
+    padding: 15px;
+    position: relative;
+}
+
+#scan::before {
+    display: block;
+    float: left;
+    content: "1";
+    font-size: 4em;
+    font-weight: bold;
+    top: -5px;
+    position: absolute;
+    left: 4px;
+}
+
+#message {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    display: block;
+    background-color: #f1f1f1;
+    margin: 30px;
+    padding: 15px;
+}
+
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -83,7 +164,7 @@ h1 {
     -webkit-border-radius:4px;
     color:#FFFFFF;
     font-size:12px;
-    margin:0px 30px;
+    margin:10px 30px;
     padding:2px 0px;
 }
 

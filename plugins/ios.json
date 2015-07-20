@@ -10,7 +10,7 @@
                     "CoreBluetooth.framework": [
                         {
                             "xml": false,
-                            "count": 2
+                            "count": 3
                         }
                     ],
                     "MediaPlayer.framework": [
@@ -20,6 +20,48 @@
                         }
                     ],
                     "AVFoundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "CoreText.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AddressBook.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libiconv.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreVideo.framework": [
                         {
                             "xml": false,
                             "count": 1
@@ -37,6 +79,24 @@
                         {
                             "xml": "<feature name=\"BLE\"><param name=\"ios-package\" onload=\"true\" value=\"BLECentralPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"TwitterClient\"><param name=\"ios-package\" value=\"TwitterClient\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -46,6 +106,12 @@
                     "UIBackgroundModes": [
                         {
                             "xml": "<array><string>bluetooth-central</string></array>",
+                            "count": 1
+                        }
+                    ],
+                    "Fabric": [
+                        {
+                            "xml": "<dict><key>APIKey</key><string>68011007b78f5610987b2f45febde86140a7ec14</string><key>Kits</key><array /></dict>",
                             "count": 1
                         }
                     ]
@@ -61,6 +127,19 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.megster.cordova.ble": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.megster.cordova.bluetoothserial": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "br.com.snippet.cordova.twitterclient": {
+            "FABRIC_KEY": "68011007b78f5610987b2f45febde86140a7ec14",
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
