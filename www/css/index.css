@@ -54,10 +54,10 @@ body {
     margin: 0;
     padding: 2px;
     width: 100%
+    display: none;
 }
 
-#picture {
-    background-image: url("https://pbs.twimg.com/profile_images/1183989734/OgAAAK7zGHQ70phpo_QeYndYJr…TAUaCBTviktSctKxFjY1_h6AuQPgAm1T1UIS0Wyef7VDICqp6uRpra3HYNc3k_400x400.jpg");
+#profile span {
     width: 70px;
     height: 70px;
     background-size: cover;
@@ -73,26 +73,6 @@ body {
     z-index: 99999;
 }
 
-.owl-item {
-    width: 70px !important;
-    margin: 0px 5px;
-}
-
-.owl-item a {
-    display: block;
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    -webkit-border-radius: 99em;
-    -moz-border-radius: 99em;
-    border-radius: 99em;
-    border: 1px solid #636060;
-    text-indent: -9999px;
-}
-
-
 #actions {
     background-color: #ffffff;
     height: 28px;
@@ -102,21 +82,53 @@ body {
     opacity: 0.9;
     text-align: left;
     padding: 12px 0 0 20px;
+    display: none;
 }
 
+#steps {
+    transition: all 560ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+    position: relative;
+    min-height: 417px;
+    width: 1080px;
+}
 
 .step {
+    margin: 30px;
+    position: relative;
+    display: block;
+    width: 300px;
+    min-height: 356px;
+    border-radius: 4px;
+    float: left;
+}
+
+.step button {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.step button.disabled {
+    opacity: 0.4;
+}
+
+.step .content {
+    padding: 15px;
+}
+
+h2 {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     text-align: center;
     display: block;
     color: #ffffff;
-    margin: 30px;
     padding: 15px;
-    position: relative;
+    margin: 0;
 }
 
-.step::before {
+h2::before {
     display: block;
     float: left;
     font-size: 5.1em;
@@ -126,194 +138,113 @@ body {
     left: -3px;
 }
 
-#scan-qrcode {
-    background-color: #fd5c63;
+#connect-step {
+    display: block;
+    background-color: #EFF9FD;
 }
 
-#scan-qrcode::before {
-    content: "1";
-}
-
-#twitter-connect {
+#connect-step h2 {
     background-color: #55acee;
 }
 
-#twitter-connect::before {
-    content: "2";
+#connect-step h2::before {
+    content: "1";
+    text-shadow: 0px 0px 4px #55acee;
 }
 
-#friend-pick {
-    background-color: #fd9f3e;
-}
-
-#friend-pick::before {
-    content: "3";
-}
-
-#friend-list-container {
-    display: block;
-    margin: 30px;
-    position: relative;
-}
-
-#friend-detail {
-    background-color: #f1f1f1;
-    margin: 0px 30px;
-    position: relative;
-    top: -105px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    padding: 10px;
-    min-height: 140px;
-}
-
-#friend-detail ul {
-    list-style: none;
+#connect-step button {
     position: absolute;
-    bottom: 0;
-    width: 250px;
-    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
-#friend-detail ul li {
-    list-style: none;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-
+#config-step {
+    background-color: #FCF2E4;
 }
 
-#friend-detail ul li:first-child {
-    background-color: #db4437;
-    left: 0px;
-}
-
-#friend-detail ul li:last-child {
-    background-color: #5b9a68;
-    right: 10px;
-}
-
-#friend-detail ul li a {
-    color: #ffffff;
-}
-
-#friend-name {
-    font-size: 1.5em;
-    width: 188px;
-    display: inline-block;
-    padding: 5px 0;
-}
-
-#friend-screenname {
-    font-style: italic;
-}
-
-#friend-picture {
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    -webkit-border-radius: 99em;
-    border-radius: 99em;
-    border: 1px solid #636060;
-    display: block;
-    float: left;
-    margin-right: 20px;
-}
-
-#gender-pick {
+#config-step h2 {
     background-color: #fbb040;
 }
 
-#gender-pick::before {
-    content: "4";
+#config-step h2::before {
+    content: "2";
+    text-shadow: 0px 0px 4px #fbb040;
 }
 
-#gender-list {
+#config-step ul {
     list-style: none;
     position: relative;
+}
+
+#config-step ul li {
+     list-style: none;
+     text-align: center;
+     padding: 10px;
+}
+
+#config-step h2:last-child {
+    background-color: #fbb040;
+}
+
+#config-step h2:last-child::before {
+    content: "3";
+}
+
+#mood-list li label[for=blessed] {
+    background-image: url("../img/mood-blessed.png");
+}
+
+#mood-list li label[for=happy] {
+    background-image: url("../img/mood-happy.png");
+}
+
+#mood-list li label[for=sick] {
+    background-image: url("../img/mood-sick.png");
+}
+
+#mood-list li label[for=love] {
+    background-image: url("../img/mood-love.png");
+}
+
+#mood-list li input:checked + label {
+  outline: 2px solid #21b4d0;
+}
+
+#lighter {
     display: block;
-    margin: 30px;
-    height: 43px;
-}
-
-#gender-list:after {
-  content: "";
-  clear: both;
-}
-
-#gender-list li {
-    list-style: none;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 110px;
     color: #ffffff;
+    margin: 0;
+    padding: 15px 0 72px 0;
+    background-image: url("../img/lighter-body-1.png");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    width: 88px;
+    height: 200px;
+    left: 39%;
+    top: 70%;
+    margin-right: -50%;
 }
 
-#gender-list li:after {
-  content: "";
-  clear: both;
+#lighter a {
+    width: 48px;
+    height: 52px;
+    position: absolute;
+    top: -2px;
 }
 
-#gender-list li:first-child {
-    background-color: #0f7dc2;
-    left: 0px;
+#lighter canvas {
+    width: 35px;
+    height: 174px;
+    position: absolute;
+    top: -57%;
+    text-align: center;
+    left: 8px;
 }
-
-#gender-list li:last-child {
-    background-color: #fc3158;
-    right: 0px;
-}
-
-#gender-list li label {
-  cursor: pointer;
-  display: block;
-  left: 1px;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  white-space: nowrap;
-  color: #ffffff;
-  padding: 8px 0;
-  font-size: 1.5em;
-}
-
-#gender-list li label:after {
-  content: "";
-  clear: both;
-}
-
-#gender-list li:first-child label {
-    background-color: #0f7dc2;
-}
-
-#gender-list li:last-child label {
-    background-color: #fc3158;
-}
-
-#gender-list li input:checked + label {
-  outline: 4px solid #21b4d0;
-}
-
-#finish-setup {
-    background-color: #9cb443;
-}
-
-#start-discovery {
-    background-color: #449a88;
-}
-
-#finish-discovery {
-    background-color: #333e48;
-}
-
 
 #message {
     border-radius: 4px;
@@ -323,6 +254,7 @@ body {
     background-color: #f1f1f1;
     margin: 30px;
     padding: 15px;
+    display: none;
 }
 
 

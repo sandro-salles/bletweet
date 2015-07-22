@@ -32,54 +32,87 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.theme.css">
-        <title>Hello World</title>
+        <title>Dad Cigar</title>
     </head>
     <body>
         <div class="app">
             <h1>HUGGIES</h1>
             <div id="deviceready">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">PROTÓTIPO - DIA DOS PAIS</p>
+                <p class="event listening">Iniciando o aplicativo</p>
             </div>
-            <div id="profile" style="display: none">
-                <div id="picture"></div>
-                <div id="actions" style="display: none">
-                    <a href="#">desconectar</a>
+            <div id="profile">
+                <span></span>
+                <div id="actions">
+                    <a href="#" id="config">Configurações</a>
+                    <a href="#" id="logout">Sair</a>
                 </div>
             </div>
         </div>
-        <div id="message" style="display: none">CLIQUE NO BOTÃO ABAIXO PARA IDENTIFICAR O DEVICE</div>
-        <a href="#" id="twitter-connect" style="display: none" class="step">TWITTER LOGIN</a>
-        <span id="friend-pick" style="display: none" class="step blink">AGUARDE, CARREGANDO AMIGOS...</span>
-        <div id="friend-list-container" style="display: none">
-            <div class="carousel"></div>
+
+        <div id="message"></div>
+
+        <div id="steps">
+            <div id="connect-step" class="step step-1">
+                <h2>Autenticação</h2>
+                <div class="content">
+                    <button>Conectar ao Twitter</button>
+                </div>
+            </div>
+
+            <div id="config-step" class="step step-2">
+                <h2>Dados do seu bebê</h2>
+                <div class="content">
+                    <h3>Sexo</h3>
+                    <ul>
+                        <li>
+                            <input name="gender" type="radio" id="male" value="male" />
+                            <label for="male">Menino</label>
+                        </li>
+                        <li>
+                            <input name="gender" type="radio" id="female" value="female" />
+                            <label for="female">Menina</label>
+                        </li>
+                    </ul>
+
+                    <h3>Nome</h3>
+                    <input type="text" name="name" value="" id="name" maxlength="30" />
+                    <button class="disabled">Continuar</button>
+                </div>
+            </div>
+
+            <div id="discovery-step" class="step step-3">
+                <div class="content">
+                    <div id="lighter">
+                        <canvas width="60" height="174"></canvas>
+                        <span></span>
+                        <a href="#"></a>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <input name="mood" type="radio" id="blessed" value="blessed" checked="checked" />
+                            <label for="blessed">Abençoado</label>
+                        </li>
+                        <li>
+                            <input name="mood" type="radio" id="happy" value="happy" />
+                            <label for="happy">Feliz</label>
+                        </li>
+                        <li>
+                            <input name="mood" type="radio" id="sick" value="sick" />
+                            <label for="sick">Preocupado</label>
+                        </li>
+                        <li>
+                            <input name="mood" type="radio" id="love" value="love" />
+                            <label for="love">Empolgado</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="friend-detail" style="display: none">
-            <span id="friend-picture"></span>
-            <span id="friend-name"></span>
-            <span id="friend-screenname"></span>
-            <ul>
-                <li><a href="#" id="cancel">Cancelar</a></li>
-                <li><a href="#" id="confirm">Confirmar</a></li>
-            </ul>
-        </div>
-        <span id="gender-pick" style="display: none" class="step">É MENINO OU MENINA?</span>
-        <ul id="gender-list" style="display: none">
-            <li>
-                <input name="baby-gender" type="radio" id="male" value="male">
-                <label for="male">Menino</label>
-            </li>
-            <li>
-                <input name="baby-gender" type="radio" id="female" value="female">
-                <label for="female">Menina</label>
-            </li>
-        </ul>
-        <a href="#" id="finish-setup" style="display: none" class="step">FINALIZAR</a>
-        <a href="#" id="start-discovery" style="display: none" class="step">START DEVICE DISCOVERY</a>
-        <a href="#" id="stop-discovery" style="display: none" class="step">STOP DEVICE DISCOVERY</a>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/fire-0.62.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();

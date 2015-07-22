@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -14,9 +16,13 @@ import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
+import com.twitter.sdk.android.core.models.SafeListAdapter;
+import com.twitter.sdk.android.core.models.SafeMapAdapter;
+import com.twitter.sdk.android.core.models.Tweet;
 import com.twitter.sdk.android.core.models.User;
 
 import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaArgs;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
@@ -25,6 +31,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -47,7 +54,7 @@ public class TwitterClient extends CordovaPlugin {
 		return preferences.getString("TwitterConsumerSecret", "");
 	}
 
-	public boolean execute(final String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+	public boolean execute(final String action, CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
 		Log.v(LOG_TAG, "Received: " + action);
 		this.action = action;
 		final Activity activity = this.cordova.getActivity();
@@ -58,8 +65,13 @@ public class TwitterClient extends CordovaPlugin {
 			return true;
 		}
 
-		if (action.equals("friends")) {
-			friends(activity, callbackContext);
+		if (action.equals("getFriendsList")) {
+			getFriendsList(activity, callbackContext);
+			return true;
+		}
+
+		if (action.equals("updateStatus")) {
+			updateStatus(activity, args, callbackContext);
 			return true;
 		}
 
@@ -116,39 +128,89 @@ public class TwitterClient extends CordovaPlugin {
 		});
 	}
 
-	private void friends(final Activity activity, final CallbackContext callbackContext) {
+	private void getFriendsList(final Activity activity, final CallbackContext callbackContext) {
 		cordova.getThreadPool().execute(new Runnable() {
 			@Override
 			public void run() {
 
-				ArrayList<User> friends = new ArrayList<User>();
-
-				TwitterClientApiClient twitterApiClient = new TwitterClientApiClient(Twitter.getSessionManager().getActiveSession());
-				twitterApiClient.getFriendsService().friends(Twitter.getSessionManager().getActiveSession().getUserId(), null, null, 200, true, false, new Callback<User>() {
+				final ArrayList<User> friends = new ArrayList<User>();
+				final TwitterClientApiClient twitterApiClient = new TwitterClientApiClient(Twitter.getSessionManager().getActiveSession());
+				twitterApiClient.getFriendsService().friends(Twitter.getSessionManager().getActiveSession().getUserId(), null, null, 200, true, false, new Callback<TwitterClientApiClient.UsersCursor>() {
 					@Override
-					public void success(Result<User> userResult) {
-						String teste = "ok";
-						callbackContext.success(handleFriendsResult(userResult.data));
+					public void success(Result<TwitterClientApiClient.UsersCursor> result) {
+
+						friends.addAll(result.data.users);
+
+						if (result.data.nextCursor > 0) {
+							twitterApiClient.getFriendsService().friends(Twitter.getSessionManager().getActiveSession().getUserId(), null, result.data.nextCursor, 200, true, false, this);
+						} else {
+							Log.v(LOG_TAG, "Successful friends list loaded!");
+							callbackContext.success(handleFriendsResult(friends));
+						}
 					}
 
 					@Override
 					public void failure(TwitterException e) {
-						Log.v(LOG_TAG, "Failed credentials verification");
-						callbackContext.error("Failed credentials verification");
+						Log.v(LOG_TAG, "Failed to load friends list");
+						callbackContext.error("Failed to load friends list");
 					}
 				});
 			}
 		});
 	}
 
+	private void updateStatus(final Activity activity, final CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
 
-	private JSONObject handleFriendsResult(User user) {
-		JSONObject response = new JSONObject();
+		final String status = args.getString(0);
 
-		try {
-			response.put("profileImageUrl", user.profileImageUrl);
-		} catch (JSONException e) {
-			e.printStackTrace();
+		cordova.getThreadPool().execute(new Runnable() {
+			@Override
+			public void run() {
+
+				TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
+				twitterApiClient.getStatusesService().update(status, null, false, null, null, null, false, false, new Callback<Tweet>() {
+					@Override
+					public void success(Result<Tweet> result) {
+
+						Log.v(LOG_TAG, "Status updates successfully");
+						callbackContext.success(handleTweetResult(result.data));
+					}
+
+					@Override
+					public void failure(TwitterException e) {
+						Log.v(LOG_TAG, "Failed push the status update");
+						callbackContext.error("Failed push the status update");
+					}
+				});
+			}
+		});
+	}
+
+	private String handleTweetResult(Tweet tweet) {
+
+		final Gson gson = new GsonBuilder()
+				.registerTypeAdapterFactory(new SafeListAdapter())
+				.registerTypeAdapterFactory(new SafeMapAdapter())
+				.create();
+
+		return gson.toJson(tweet);
+	}
+
+	private JSONArray handleFriendsResult(List<User> users) {
+
+		JSONArray response = new JSONArray();
+
+		for (User user: users) {
+			JSONObject object = new JSONObject();
+			try {
+				object.put("name", user.name);
+				object.put("screenName", user.screenName);
+				object.put("id", user.id);
+				object.put("profileImageUrl", user.profileImageUrl);
+				response.put(object);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
 		}
 		return response;
 	}
@@ -158,8 +220,9 @@ public class TwitterClient extends CordovaPlugin {
 		JSONObject response = new JSONObject();
 
 		try {
-			response.put("userName", session.getUserName());
-			response.put("userId", session.getUserId());
+			response.put("name", user.name);
+			response.put("screenName", user.screenName);
+			response.put("id", user.id);
 			response.put("secret", session.getAuthToken().secret);
 			response.put("token", session.getAuthToken().token);
 			response.put("profileImageUrl", user.profileImageUrl);

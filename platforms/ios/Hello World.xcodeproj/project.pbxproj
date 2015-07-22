@@ -48,19 +48,27 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		DDB755B534114D95A7A920B1 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77540A2952F349949AA3B99D /* CBPeripheral+Extensions.m */; };
 		07B8E99F98814BA3B8C3C761 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B64E3E549D249DCB361E2E6 /* QuartzCore.framework */; };
-		6167C6C919724E2CA54BF64F /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DC3ADDF38D431794C50AE8 /* CDVInAppBrowser.m */; };
 		25F9297FD60B42158239E451 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ACA77141C44862BBD77473 /* CBPeripheral+Extensions.m */; };
 		7453F635A41B466EB2001E46 /* CDVBarcodeScanner.mm in Resources */ = {isa = PBXBuildFile; fileRef = A9043C3B0B814179AA965B73 /* CDVBarcodeScanner.mm */; settings = {COMPILER_FLAGS = -fno-objc-arc; }; };
 		64DBE65E5C564AA28B79AF13 /* zxing-all-in-one.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 84FDCEF727C84641B3CC926C /* zxing-all-in-one.cpp */; };
 		0C6BBC916B2143B98DC7C923 /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */; };
 		CE4BEBF24D1843758FFF34D1 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC03CCE500344608A3C62D5F /* libiconv.dylib */; };
 		BF3ACF0C31454C708763DD58 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */; };
-		E1A225205C8B4AC5AACEC4AF /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */; };
-		8A611BA09CC84DD0B931900A /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */; };
-		28CFA00F21EE48488B3D7D53 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B17AAFE0BAF424C82A0550B /* Fabric.framework */; };
-		43DE8880680C481B9E7B7DC2 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57BDF7041CA44C2A45A013F /* TwitterKit.framework */; };
-		91A775980D604517A32D5DB5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */; };
-		5F6D5168A5EE4ADFA4A6778B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */; };
+		1CB4385082964DCF91D212A1 /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F9D334549047B985F3E1AB /* CDVConnection.m */; };
+		61FD96C52A1949E4BC0B37F3 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A2287A8AF7794709B5DFCBFA /* CDVReachability.m */; };
+		EE0C31E4A99F41868298679C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E7298C5C354C15BDB26E0D /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3F6189769EB54EA9A28AC9B8 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 598F55A675E84B79B71F5205 /* CDVNotification.m */; };
+		0F0A173C52DB4234820A2202 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B44072E544B4F55AABE0441 /* CDVNotification.bundle */; };
+		504A8C92DDEC496D8409BACE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738D3409BB564697B52FEC8A /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		73B6FEEDBDA14CC798BA2D54 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AA3656C17C42C2ABE405F1 /* CDVVibration.m */; };
+		9E54DB2E0D024450B08F7346 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B274EA596845F599A4F3E3 /* Toast+UIView.m */; };
+		E9B02C9F34104BD3B17778FE /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = D38057175C594FA0AD54FC25 /* Toast.m */; };
+		6A34234CDD424015842B145B /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 589D667B2B10458BA2769CB4 /* TwitterClient.m */; };
+		0023967DAA5044E0BBDE68A1 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B69E2555E6E4A0C8E041E53 /* TwitterKitResources.bundle */; };
+		F9844D920EEE44C19E646D17 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCF19C0C834C6689C19807 /* Fabric.framework */; };
+		D98609F8A7544BF2A4F9DBEB /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBB34D65FDF49628E0195F9 /* TwitterKit.framework */; };
+		F0A4BAC853E4414EA6F3FAF0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85825AB8FDF5416CB30D7E69 /* CoreText.framework */; };
+		FEB5314893714FA39D87596B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDF059D9ED849C090F9A8E6 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,8 +151,6 @@
 		F37726A600524562A3B77405 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = br.com.snippet.cordova.volumehijack/VolumeHijackPlugin/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Hello World/config.xml"; sourceTree = "<group>"; };
 		3B64E3E549D249DCB361E2E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		C6DC3ADDF38D431794C50AE8 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		7E4742DE07334308869EB750 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		66ACA77141C44862BBD77473 /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+Extensions.m"; path = "com.megster.cordova.bluetoothserial/BluetoothSerial/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		6415DE8266EF47EC982F4984 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "com.megster.cordova.bluetoothserial/BluetoothSerial/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		A9043C3B0B814179AA965B73 /* CDVBarcodeScanner.mm */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "CDVBarcodeScanner.mm"; path = "com.phonegap.plugins.barcodescanner/CDVBarcodeScanner.mm"; sourceTree = "<group>"; fileEncoding = 4; };
@@ -153,13 +159,28 @@
 		8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "scannerOverlay.xib"; path = "scannerOverlay.xib"; sourceTree = "<group>"; fileEncoding = 4; };
 		EC03CCE500344608A3C62D5F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
 		DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterClient.m"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		621F79A1CE9142C6809FB144 /* TwitterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterClient.h"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "TwitterKitResources.bundle"; path = "TwitterKitResources.bundle"; sourceTree = "<group>"; };
-		2B17AAFE0BAF424C82A0550B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fabric.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/Fabric.framework"; sourceTree = "<group>"; };
-		B57BDF7041CA44C2A45A013F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "TwitterKit.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/TwitterKit.framework"; sourceTree = "<group>"; };
-		F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		F8F9D334549047B985F3E1AB /* CDVConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVConnection.m"; path = "org.apache.cordova.network-information/CDVConnection.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A2287A8AF7794709B5DFCBFA /* CDVReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVReachability.m"; path = "org.apache.cordova.network-information/CDVReachability.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		E3FF7166A46848E6B2502AB2 /* CDVConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVConnection.h"; path = "org.apache.cordova.network-information/CDVConnection.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		13B3D9414A2E49AEAE303E18 /* CDVReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVReachability.h"; path = "org.apache.cordova.network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		06E7298C5C354C15BDB26E0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		598F55A675E84B79B71F5205 /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B733654FFB5847AD9124D574 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7B44072E544B4F55AABE0441 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		738D3409BB564697B52FEC8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		C8AA3656C17C42C2ABE405F1 /* CDVVibration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVVibration.m"; path = "org.apache.cordova.vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		CFA9B01DD9C9405898D3DB92 /* CDVVibration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVVibration.h"; path = "org.apache.cordova.vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		73B274EA596845F599A4F3E3 /* Toast+UIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Toast+UIView.m"; path = "nl.x-services.plugins.toast/Toast+UIView.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D38057175C594FA0AD54FC25 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Toast.m"; path = "nl.x-services.plugins.toast/Toast.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D9395AC8FCF44F13B9E3FA86 /* Toast+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Toast+UIView.h"; path = "nl.x-services.plugins.toast/Toast+UIView.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4DA94BAEE0274E66B451037D /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Toast.h"; path = "nl.x-services.plugins.toast/Toast.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		589D667B2B10458BA2769CB4 /* TwitterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TwitterClient.m"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8B7C2630953040D4919C3C11 /* TwitterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TwitterClient.h"; path = "br.com.snippet.cordova.twitterclient/TwitterClient.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4B69E2555E6E4A0C8E041E53 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "TwitterKitResources.bundle"; path = "TwitterKitResources.bundle"; sourceTree = "<group>"; };
+		93CCF19C0C834C6689C19807 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fabric.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/Fabric.framework"; sourceTree = "<group>"; };
+		5EBB34D65FDF49628E0195F9 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "TwitterKit.framework"; path = "Hello World/Plugins/br.com.snippet.cordova.twitterclient/TwitterKit.framework"; sourceTree = "<group>"; };
+		85825AB8FDF5416CB30D7E69 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreText.framework"; path = "System/Library/Frameworks/CoreText.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		EFDF059D9ED849C090F9A8E6 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +198,12 @@
 				07B8E99F98814BA3B8C3C761 /* QuartzCore.framework in Frameworks */,
 				CE4BEBF24D1843758FFF34D1 /* libiconv.dylib in Frameworks */,
 				BF3ACF0C31454C708763DD58 /* CoreVideo.framework in Frameworks */,
-				28CFA00F21EE48488B3D7D53 /* Fabric.framework in Frameworks */,
-				43DE8880680C481B9E7B7DC2 /* TwitterKit.framework in Frameworks */,
-				91A775980D604517A32D5DB5 /* CoreText.framework in Frameworks */,
-				5F6D5168A5EE4ADFA4A6778B /* AddressBook.framework in Frameworks */,
+				EE0C31E4A99F41868298679C /* SystemConfiguration.framework in Frameworks */,
+				504A8C92DDEC496D8409BACE /* AudioToolbox.framework in Frameworks */,
+				F9844D920EEE44C19E646D17 /* Fabric.framework in Frameworks */,
+				D98609F8A7544BF2A4F9DBEB /* TwitterKit.framework in Frameworks */,
+				F0A4BAC853E4414EA6F3FAF0 /* CoreText.framework in Frameworks */,
+				FEB5314893714FA39D87596B /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +266,8 @@
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Hello World-Info.plist */,
 				8D6578FBDBBB4F75A1BDCD2C /* scannerOverlay.xib */,
-				95B9EF2C9B994C209341A985 /* TwitterKitResources.bundle */,
+				7B44072E544B4F55AABE0441 /* CDVNotification.bundle */,
+				4B69E2555E6E4A0C8E041E53 /* TwitterKitResources.bundle */,
 			);
 			name = Resources;
 			path = "Hello World/Resources";
@@ -261,10 +285,12 @@
 				3B64E3E549D249DCB361E2E6 /* QuartzCore.framework */,
 				EC03CCE500344608A3C62D5F /* libiconv.dylib */,
 				DFFF4580B6E84A1E957ADBC8 /* CoreVideo.framework */,
-				2B17AAFE0BAF424C82A0550B /* Fabric.framework */,
-				B57BDF7041CA44C2A45A013F /* TwitterKit.framework */,
-				F3E6114D00CE4BF5A7ADB03E /* CoreText.framework */,
-				CC92B3CB2E9B4D2786C303A0 /* AddressBook.framework */,
+				06E7298C5C354C15BDB26E0D /* SystemConfiguration.framework */,
+				738D3409BB564697B52FEC8A /* AudioToolbox.framework */,
+				93CCF19C0C834C6689C19807 /* Fabric.framework */,
+				5EBB34D65FDF49628E0195F9 /* TwitterKit.framework */,
+				85825AB8FDF5416CB30D7E69 /* CoreText.framework */,
+				EFDF059D9ED849C090F9A8E6 /* AddressBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,15 +321,25 @@
 				94B3D65106FA4996B32218FC /* BLEDefines.h */,
 				77540A2952F349949AA3B99D /* CBPeripheral+Extensions.m */,
 				E306B207F6FC48789F4B681A /* CBPeripheral+Extensions.h */,
-				C6DC3ADDF38D431794C50AE8 /* CDVInAppBrowser.m */,
-				7E4742DE07334308869EB750 /* CDVInAppBrowser.h */,
 				66ACA77141C44862BBD77473 /* CBPeripheral+Extensions.m */,
 				6415DE8266EF47EC982F4984 /* CBPeripheral+Extensions.h */,
 				A9043C3B0B814179AA965B73 /* CDVBarcodeScanner.mm */,
 				84FDCEF727C84641B3CC926C /* zxing-all-in-one.cpp */,
 				2D26E54E54554F12B5BD4934 /* zxing-all-in-one.h */,
-				7396A8EB245E4F3FB7E221A4 /* TwitterClient.m */,
-				621F79A1CE9142C6809FB144 /* TwitterClient.h */,
+				F8F9D334549047B985F3E1AB /* CDVConnection.m */,
+				A2287A8AF7794709B5DFCBFA /* CDVReachability.m */,
+				E3FF7166A46848E6B2502AB2 /* CDVConnection.h */,
+				13B3D9414A2E49AEAE303E18 /* CDVReachability.h */,
+				598F55A675E84B79B71F5205 /* CDVNotification.m */,
+				B733654FFB5847AD9124D574 /* CDVNotification.h */,
+				C8AA3656C17C42C2ABE405F1 /* CDVVibration.m */,
+				CFA9B01DD9C9405898D3DB92 /* CDVVibration.h */,
+				73B274EA596845F599A4F3E3 /* Toast+UIView.m */,
+				D38057175C594FA0AD54FC25 /* Toast.m */,
+				D9395AC8FCF44F13B9E3FA86 /* Toast+UIView.h */,
+				4DA94BAEE0274E66B451037D /* Toast.h */,
+				589D667B2B10458BA2769CB4 /* TwitterClient.m */,
+				8B7C2630953040D4919C3C11 /* TwitterClient.h */,
 			);
 			name = Plugins;
 			path = "Hello World/Plugins";
@@ -463,7 +499,8 @@
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
 				0C6BBC916B2143B98DC7C923 /* scannerOverlay.xib in Resources */,
-				8A611BA09CC84DD0B931900A /* TwitterKitResources.bundle in Resources */,
+				0F0A173C52DB4234820A2202 /* CDVNotification.bundle in Resources */,
+				0023967DAA5044E0BBDE68A1 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,11 +537,16 @@
 				401330670A8940B192565D65 /* VolumeHijackPlugin.m in Sources */,
 				8CD82F4E6F27408EA349142E /* JPSVolumeButtonHandler.m in Sources */,
 				DDB755B534114D95A7A920B1 /* CBPeripheral+Extensions.m in Sources */,
-				6167C6C919724E2CA54BF64F /* CDVInAppBrowser.m in Sources */,
 				25F9297FD60B42158239E451 /* CBPeripheral+Extensions.m in Sources */,
 				7453F635A41B466EB2001E46 /* CDVBarcodeScanner.mm in Resources */,
 				64DBE65E5C564AA28B79AF13 /* zxing-all-in-one.cpp in Resources */,
-				E1A225205C8B4AC5AACEC4AF /* TwitterClient.m in Sources */,
+				1CB4385082964DCF91D212A1 /* CDVConnection.m in Sources */,
+				61FD96C52A1949E4BC0B37F3 /* CDVReachability.m in Sources */,
+				3F6189769EB54EA9A28AC9B8 /* CDVNotification.m in Sources */,
+				73B6FEEDBDA14CC798BA2D54 /* CDVVibration.m in Sources */,
+				9E54DB2E0D024450B08F7346 /* Toast+UIView.m in Sources */,
+				E9B02C9F34104BD3B17778FE /* Toast.m in Sources */,
+				6A34234CDD424015842B145B /* TwitterClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +602,12 @@
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 				);
 			};
 			name = Debug;
@@ -597,6 +645,12 @@
 					"$(inherited)",
 					"\"Hello World/Plugins/twitter-connect-plugin\"",
 					"\"Hello World/Plugins/twitter-connect-plugin\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
+					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",
 					"\"Hello World/Plugins/br.com.snippet.cordova.twitterclient\"",

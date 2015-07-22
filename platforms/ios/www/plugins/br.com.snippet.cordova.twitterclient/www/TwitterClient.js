@@ -4,8 +4,11 @@ var TwitterClient = {
 	login: function (successCallback, errorCallback) {
 		exec(successCallback, errorCallback, 'TwitterClient', 'login', []);
 	},
-	friends: function (successCallback, errorCallback) {
-		exec(successCallback, errorCallback, 'TwitterClient', 'friends', []);
+	getFriendsList: function (successCallback, errorCallback) {
+		exec(successCallback, errorCallback, 'TwitterClient', 'getFriendsList', []);
+	},
+	updateStatus: function (statusText, successCallback, errorCallback, options) {
+		exec(successCallback, errorCallback, 'TwitterClient', 'updateStatus', [statusText, options]);
 	},
 	logout: function (successCallback, errorCallback) {
 		exec(successCallback, errorCallback, 'TwitterClient', 'logout', []);
