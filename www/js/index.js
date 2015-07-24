@@ -20,8 +20,14 @@ var app = {
 
     TOAST_SHORT: "short",
     TOAST_LONG: "long",
+    TOAST_TOP: "top",
+    TOAST_MIDDLE: "center",
+    TOAST_BOTTOM: "bottom",
+
     GENDER_MALE: "male",
     GENDER_FEMALE: "female",
+
+    NAME_MIN_CHARS: 3,
 
     STATUS_RUNNING: "running",
     STATUS_PAUSED: "paused",
@@ -66,10 +72,10 @@ var app = {
 
     DEVICE_ADDRESSES: ["00:1D:AE:40:24:91"],
     MOODS: {
-        blessed: { key: "blessed", name: "Abençoado" },
+        feelgood: { key: "feelgood", name: "De boa" },
         happy: { key: "happy", name: "Feliz" },
         sick: { key: "sick", name: "Preocupado" },
-        love: { key: "love", name: "Apaixonado" }
+        inlove: { key: "inlove", name: "Apaixonado" }
     },
 
     HASHTAG: "#huggiesdadcigar",
@@ -78,7 +84,7 @@ var app = {
 
     TWEETS: {
         male: {
-            blessed: [
+            feelgood: [
                 "Illicit caterpillar where notwithstanding across disbanded the after coughed hey.",
                 "Therefore dashingly a misheard ladybug far crud one ravenously notwithstanding overthrew."
             ],
@@ -90,13 +96,13 @@ var app = {
                 "Rabbit much excluding sudden besides wherever much jellyfish however.",
                 "This far shot piranha and more this much lemur this drove plentiful more hey far and tearful alas."
             ],
-            love: [
+            inlove: [
                 "That a wailed overdid the thoughtfully that moronic and went goodness and goodness dreamed.",
                 "Vulgar jeez exclusive swelled cut this because."
             ]
         },
         female: {
-            blessed: [
+            feelgood: [
                 "Rapidly winked stared frighteningly indicative dazedly snugly measurable and cobra upset diverse lighted while.",
                 "A much salmon gosh."
             ],
@@ -108,7 +114,7 @@ var app = {
                 "Some before gauchely since pious more or and far overpaid mongoose redoubtably pending.",
                 "Stringently articulately halfheartedly much haughty swanky much monstrously so dear cowered visually where less."
             ],
-            love: [
+            inlove: [
                 "Tiger understood and massive perceptibly darn jeepers giraffe gosh because and without among intensely komodo.",
                 "Hello some the ladybug selfish more trod one much practicably and glared stopped hey much barring a after darn."
             ]
@@ -122,14 +128,14 @@ var app = {
     _application_bt_status: null,
     _tmp_flame_up_interval_id: null,
     _tmp_flame_down_interval_id: null,
-    
+    _current_step: null,
 
     // Application Constructor
     initialize: function() {
 
         app._application_status = app.STATUS_RUNNING;
         app._application_bt_status = app.STATUS_BT_UNINITIALIZED;
-        app.config.mood = app.MOODS.blessed.key
+        app.config.mood = app.MOODS.feelgood.key
 
         this.bindEvents();
     },
@@ -157,6 +163,13 @@ var app = {
 
         $('.listening').hide();
 
+        $("button").bind(
+            "touchend",
+            function () {
+                $(this).addClass("disabled");
+            }
+        );
+
         $("#logout").bind(
             "touchend",
             function() {
@@ -167,6 +180,8 @@ var app = {
                          TwitterClient.logout(app.twitter_logout_success, app.twitter_logout_failure);
                     }
                 );
+
+                return false;
             }
         );
 
@@ -174,34 +189,110 @@ var app = {
             "touchend",
             function () {
 
-                step(3);
+                $(".step-2 button").removeClass("disabled");
+                app.goto_step(2);
+                $("#actions").toggle();
+                return false;
             }
         );
 
         $("#profile span").bind(
             "touchend",
             function(){
-                $("#actions").toggle("slow");
+                $("#actions").toggle();
             }
         );
+
+
+        $("#connect-step button").bind(
+            "touchend",
+            function() {
+
+                app.check_connection(
+                    function() {
+
+                        app.toast(
+                            "Aguardando conexão com o Twitter... ",
+                            app.TOAST_LONG,
+                            function() {
+
+                                $("#connect-step button").addClass("disabled");
+                                TwitterClient.login(app.twitter_login_success, app.twitter_login_failure);
+                            },
+                            app.TOAST_BOTTOM
+                        );
+                    }                    
+                );
+
+                return false;
+            }            
+        );
+
 
         $("#config-step ul input").bind(
             "change",
             function(){
 
-                app.config.gender = $(this).val();
+                if ($(this).val()) {
 
-                var toast_text = "";
+                    if ($.trim($("#config-step #name").val()).length >= app.NAME_MIN_CHARS) {
 
-                if(app.config.gender == app.GENDER_MALE) {
-                    toast_text = "OK, é um menino... qual é o nome dele?";
-                } else {
-                    toast_text = "OK, é uma menina... qual é o nome dela?";
+                        $("#config-step button").removeClass("disabled");
+                    }                    
                 }
-
-                app.toast(toast_text,app.TOAST_LONG);
             }
         );
+
+
+        
+
+        $("#config-step #name").bind(
+            "input paste",
+            function() {
+
+                if ($.trim($(this).val()).length >= app.NAME_MIN_CHARS) {
+
+                    if ($("#config-step ul input").val()) {
+
+                        $("#config-step button").removeClass("disabled");
+                    }                    
+
+                } else {
+
+                    $("#config-step button").addClass("disabled");
+                    return false;
+                }
+                
+            }
+        );
+
+
+        $("#config-step button").bind(
+            "touchend",
+            function() {
+
+                if ($.trim($("#config-step #name").val()).length < app.NAME_MIN_CHARS) {
+                    app.toast("Ops... o nome do bebê deve ter ao menos 3 caracteres!", app.TOAST_SHORT, null, app.TOAST_BOTTOM);
+                    return;
+                }
+                
+                if (!$("#config-step ul input").val()) {
+                    app.toast("Ops... escolha o sexo do bebê!", app.TOAST_SHORT, null, app.TOAST_BOTTOM);
+                    return;
+                }
+
+                app.config.name = $("#name").val();
+                app.config.gender = $("#config-step ul input").val();
+
+                $("#config-step button").addClass("disabled");
+
+                $("#config").show();
+
+                app.goto_step(3);
+                app.bluetooth_start_discovery();
+            }
+        );
+
 
         $("#discovery-step ul input").bind(
             "touchend",
@@ -237,53 +328,11 @@ var app = {
             }
         );
 
-
-        $("#connect-step button").bind(
-            "touchend",
-            function() {
-
-                app.check_connection(
-                    function() {
-
-                        app.toast(
-                            "Aguardando conexão com o Twitter... (dependendo da sua conexão isso pode demorar um pouquinho)",
-                            app.TOAST_LONG,
-                            function() {
-
-                                $("#connect-step button").addClass("disabled");
-                                TwitterClient.login(app.twitter_login_success, app.twitter_login_failure);
-                            }
-                        );
-                    }                    
-                );
-
-                return false;
-            }            
-        );
-
-
-        $("#config-step button").bind(
-            "touchend",
-            function() {
-
-                app.config.name = $("#name").val();
-
-                app.toast(
-                    "Tudo pronto! Assim que você quiser, basta enviar o sinal :)", 
-                    app.TOAST_LONG, 
-                    function() {
-
-                        $("#config-step button").addClass("disabled");
-                        app.step(3);
-                        app.bluetooth_start_discovery();
-                    }
-                );
-            }
-        );
-
         $('#lighter canvas').fire(app.BT_FLAME_PARAMS);
 
-        step(1);
+        
+        
+        app.goto_step(1);
          
 
     },
@@ -297,11 +346,15 @@ var app = {
     },
     on_online: function() {
 
-        app.toast("Agora você está conectado a internet! :)");
+        app.toast("Agora você está conectado a internet! :)", app.TOAST_SHORT, null, app.TOAST_BOTTOM);
+
+        if (app._current_step == 1) {
+            $(".step-1 button").removeClass("disabled");
+        }
     },
     on_offline: function() {
 
-        app.toast("Parece que você não está conectado a internet... :(");
+        app.toast("Parece que você não está conectado a internet... :(", app.TOAST_SHORT, null, app.TOAST_BOTTOM);
 
         if(app._application_bt_status != app.STATUS_BT_UNINITIALIZED) {
             app.bluetooth_stop_discovery();
@@ -312,7 +365,7 @@ var app = {
         var connection_type = navigator.connection.type;
 
         if (connection_type == Connection.NONE) {
-            app.toast("Parece que você não está conectado a internet. Por favor conecte-se e tente novamente!");
+            app.toast("Parece que você não está conectado a internet. Por favor conecte-se e tente novamente!", app.TOAST_SHORT, null, app.TOAST_BOTTOM);
         }
         else {
             callback();
@@ -322,15 +375,15 @@ var app = {
 
         $("#message").html(message).show();
     },
-    toast: function(message, duration, callback) {
+    toast: function(message, duration, callback, position) {
+
+        if (!duration) { duration = app.TOAST_SHORT };
+        if (!position) { position = app.TOAST_MIDDLE };
 
         var success_callback = (callback && typeof callback == "function") ? callback : app.on_toast_success
 
-        if (!duration || duration == app.TOAST_SHORT) {
-            window.plugins.toast.showShortBottom(message, success_callback, app.on_toast_failure);
-        } else {
-            window.plugins.toast.showLongBottom(message, success_callback, app.on_toast_failure);
-        }
+        window.plugins.toast.show(message, duration, position, success_callback, app.on_toast_failure);
+        
     },
     on_toast_success: function(result) {
         //console.log(result);
@@ -338,25 +391,25 @@ var app = {
     on_toast_failure: function(error) {
         //console.log(error);
     },
-    step: function(num) {
+    goto_step: function(num) {
         
         if (num == 1) {
             $("#steps").css("left","0px");
-            app.step = 1;
+            app._current_step = 1;
 
             return;
         } 
 
         if (num == 2) {
             $("#steps").css("left","-360px");
-            app.step = 2;      
+            app._current_step = 2;      
 
             return;
         } 
 
-        if (num == 2) {
+        if (num == 3) {
             $("#steps").css("left","-720px");        
-            app.step = 3;
+            app._current_step = 3;
 
             return;
         }        
@@ -370,14 +423,14 @@ var app = {
         app.config.credentials = result;
         app.config.credentials.profileImageUrl = app.config.credentials.profileImageUrl.replace("_normal","");
 
-        app.toast("Parabéns " + app.config.credentials.name + ", agora diga qual é o sexo do bebê...", app.TOAST_LONG);
-
         $("#profile span").css("background-image","url('" + app.config.credentials.profileImageUrl + "')");
         $("#profile").show();
 
-        app.step(2);
+        app.goto_step(2);
     },
     twitter_login_failure: function(error) {
+
+        app.goto_step(1);
 
         console.log(error);
         $("#connect-step button").removeClass("disabled");
@@ -391,9 +444,10 @@ var app = {
             app.TOAST_SHORT, 
             function() {
 
-                step(1);
+                app.goto_step(1);
                 location.reload();
-            }
+            },
+            app.TOAST_BOTTOM
         );
     },
     twitter_logout_failure: function(error) {
@@ -503,7 +557,7 @@ var app = {
 
                 app.bluetooth_flame_light_up();
 
-                app.toast("Aguardando o sinal do charuto... Move o dedo sobre a chama para encerrar a escuta :)", app.TOAST_LONG);
+                app.toast("Aguardando o sinal do charuto... Mova o dedo sobre a chama para desligar a escuta :)");
                 bluetoothSerial.setDeviceDiscoveredListener(app.bluetooth_on_device_discovered);
                 bluetoothSerial.discoverUnpaired(app.bluetooth_discovery_finished_success, app.bluetooth_discovery_finished_failure);
             },
@@ -514,7 +568,7 @@ var app = {
 
         app._application_bt_status = app.STATUS_BT_STOPPED;
 
-        app.toast("Parando de ouvir o sinal do charuto. Para reiniciar, acenda o isqueiro com o dedo :)", app.TOAST_LONG);
+        app.toast("Parando de ouvir o sinal do charuto. Para reiniciar, acenda o isqueiro com o dedo :)");
 
         app.bluetooth_flame_light_down();
 
@@ -536,7 +590,7 @@ var app = {
     },
     bluetooth_on_device_discovered: function(device) {
 
-        if(app._application_bt_status == app.STATUS_BT_DISCOVERING && $.inArray( device.address, app.device_addresses ) > -1) {
+        if(app._application_bt_status == app.STATUS_BT_DISCOVERING && $.inArray( device.address, app.DEVICE_ADDRESSES ) > -1) {
 
             app.check_connection(
                 function() {
@@ -545,7 +599,7 @@ var app = {
                         app.TOAST_LONG,
                         function () {
                             $('#lighter canvas').fire("change", app.BT_FLAME_ON_TWEET_PARAMS);
-                            app.twitter_send_random_tweet;
+                            app.twitter_send_random_tweet();
                         }
                     );
                 }

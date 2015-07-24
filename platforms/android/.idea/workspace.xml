@@ -10,144 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331583fa-4caf-4780-af3f-290d2e035ebb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/js/fire-0.62.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/AjaxLoader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/grabbing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/js/owl-carousel/owl.transitions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppBrowser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppChromeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/cordova-plugin-inappbrowser/CDVInAppBrowser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/Hello World/Plugins/cordova-plugin-inappbrowser/CDVInAppBrowser.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ios/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/NOTICE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/de/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/de/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/es/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/es/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/fr/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/fr/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/it/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/it/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/ja/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/ja/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/ko/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/ko/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/pl/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/pl/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/ru/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/zh/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/doc/zh/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/amazon/InAppBrowser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/amazon/InAppChromeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/InAppBrowser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/InAppBrowserDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/InAppChromeClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-hdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-hdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-hdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-mdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-mdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-mdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xhdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xhdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xhdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xxhdpi/ic_action_next_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xxhdpi/ic_action_previous_item.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/android/res/drawable-xxhdpi/ic_action_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/de/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/es/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/fr/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/it/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/ja/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/ko/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/pl/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/blackberry10/doc/zh/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/firefoxos/InAppBrowserProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ios/CDVInAppBrowser.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ubuntu/InAppBrowser.qml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ubuntu/InAppBrowser_escapeScript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ubuntu/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ubuntu/inappbrowser.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/ubuntu/inappbrowser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/src/wp/InAppBrowser.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/inject.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/inject.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/inject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/local.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/local.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/resources/video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/tests/tests.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/www/inappbrowser.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-inappbrowser/www/windows8/InAppBrowserProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/AjaxLoader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/grabbing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/js/owl-carousel/owl.transitions.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/www/img/genders.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/www/img/mood-love.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../www/img/mood-love.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/img/mood-happy.png" afterPath="$PROJECT_DIR$/assets/www/img/mood-happy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/img/mood-happy.png" afterPath="$PROJECT_DIR$/../../www/img/mood-happy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/img/mood-sick.png" afterPath="$PROJECT_DIR$/assets/www/img/mood-sick.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/img/mood-sick.png" afterPath="$PROJECT_DIR$/../../www/img/mood-sick.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClient.java" afterPath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" afterPath="$PROJECT_DIR$/../ios/www/plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" afterPath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/www/TwitterClient.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClientApiClient.java" afterPath="$PROJECT_DIR$/../../plugins/br.com.snippet.cordova.twitterclient/src/android/TwitterClientApiClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android.iml" afterPath="$PROJECT_DIR$/android.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/android.json" afterPath="$PROJECT_DIR$/../../plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../config.xml" afterPath="$PROJECT_DIR$/../../config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/config.xml" afterPath="$PROJECT_DIR$/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/Hello World/config.xml" afterPath="$PROJECT_DIR$/../ios/Hello World/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/../ios/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/fetch.json" afterPath="$PROJECT_DIR$/../../plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/css/index.css" afterPath="$PROJECT_DIR$/assets/www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/css/index.css" afterPath="$PROJECT_DIR$/../../www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="$PROJECT_DIR$/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/index.html" afterPath="$PROJECT_DIR$/../../www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/index.js" afterPath="$PROJECT_DIR$/assets/www/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/js/index.js" afterPath="$PROJECT_DIR$/../../www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/ios.json" afterPath="$PROJECT_DIR$/../../plugins/ios.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ios/Hello World.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../ios/Hello World.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="android.iws" />
@@ -1600,28 +1479,6 @@
               <option name="myItemId" value="android" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1848,7 +1705,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1869,7 +1726,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983023" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.304414" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.456621" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1921,9 +1778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="n#class#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1963,9 +1818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="n#class#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2259,9 +2112,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22486289">
           <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-          <folding>
-            <element signature="n#class#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

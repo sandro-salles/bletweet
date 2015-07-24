@@ -45,15 +45,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px -65px;
+    position: relative;
+}
+
+.app button {
+    background: transparent none;
+    border: 0 none;
+    padding: 10px;
 }
 
 #profile {
-    display: block;
     position: absolute;
     top: 20px;
     margin: 0;
     padding: 2px;
-    width: 100%
+    width: 100%;
     display: none;
 }
 
@@ -68,21 +74,32 @@ body {
     border-radius: 99em;
     border: 1px solid #636060;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 0;
     z-index: 99999;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #actions {
     background-color: #ffffff;
-    height: 28px;
-    margin: 10px 30px 0 30px;
+    height: 36px;
+    margin: 12px 30px 0 72px;
     border-radius: 99em;
     -webkit-border-radius: 99em;
     opacity: 0.9;
     text-align: left;
-    padding: 12px 0 0 20px;
+    padding: 0px 0 0 20px;
     display: none;
+}
+
+#actions #config {
+    display: none;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 #steps {
@@ -108,14 +125,32 @@ body {
     border-radius: 4px;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: #17ad49;
 }
+
+.step button:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+
 
 .step button.disabled {
     opacity: 0.4;
+    background-color: #ccc;
 }
 
 .step .content {
     padding: 15px;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-top: 80px;
 }
 
 h2 {
@@ -154,10 +189,12 @@ h2::before {
 
 #connect-step button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
+    background-color: #55acee;
+    color: #ffffff;    
 }
 
 #config-step {
@@ -171,45 +208,257 @@ h2::before {
 #config-step h2::before {
     content: "2";
     text-shadow: 0px 0px 4px #fbb040;
+    left: 2px;
+}
+
+#config-step h3 {
+    padding-top: 20px;
 }
 
 #config-step ul {
     list-style: none;
     position: relative;
+    margin: 0 0 45px 0;
+    padding: 0 0 0 60px;
+}
+
+#config-step ul:before {
+    content: "sexo";
+    position: absolute;
+    left: 0;
+    font-size: 1.15em;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translate;
+    color: #999999;
+}
+
+#config-step ul:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 #config-step ul li {
-     list-style: none;
-     text-align: center;
-     padding: 10px;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    display: block;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    height: 90px;
 }
 
-#config-step h2:last-child {
+#config-step ul li label {
+    position: absolute;
+    text-indent: -9999px;
+    background-size: 65%;
+    background-position: 13px 13px;
+    border-radius: 99em;
+    background-color: #ffffff;
+    height: 70px;
+    width: 70px;
+    left: 50%;
+    top: 50%;
+    background-repeat: no-repeat;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-filter: grayscale(100%);
+}
+
+#config-step ul li label:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -2px;
+    top: 77%;
+    border-radius: 99em;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#config-step ul li label[for=male] {
+    background-image: url("../img/gender-male.png");
+}
+
+#config-step ul li label[for=female] {
+    background-image: url("../img/gender-female.png");
+}
+
+#config-step ul li input:checked + label {
+    -webkit-filter: grayscale(0%);
+}
+
+#config-step ul li input:checked + label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 6px;
+    top: 0px;
+    border-radius: 99em;
+    display: block;
+}
+
+#config-step li input#male:checked + label {
+    border: 1px solid rgb(87, 87, 219);
+    background-color: #F0F1FC;
+}
+
+#config-step li input#male:checked + label:before {
+    border: 1px solid rgb(87, 87, 219);
+    background-color: rgb(87, 87, 219);
+}
+
+
+#config-step li input#female:checked + label {
+    border: 1px solid rgb(206, 13, 160);
+    background-color: #FFF2F9;
+}
+
+#config-step li input#female:checked + label:before {
+    border: 1px solid rgb(206, 13, 160);
+    background-color: rgb(206, 13, 160);
+}
+
+#config-step input[name=gender] {
+    display: none;
+}
+
+#config-step #name {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    border-radius: 4px;
+    border-style: none;
+}
+
+#config-step #name::-webkit-input-placeholder {
+    position: relative;
+    top: 2px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+#config-step button {
+    margin-top: 20px;
+    width: 100%;
     background-color: #fbb040;
+    color: #ffffff;    
 }
 
-#config-step h2:last-child::before {
-    content: "3";
+
+#discovery-step ul {
+    z-index: 99999;
+    bottom: -31px;
+    list-style: none;
+    position: absolute;
+    margin: 0 0 0px 0;
+    padding: 0 30px;
+    width: 100%;
+    left: -30px;
+    right: 0;
+    transform: translateX(-0%);
+    transform: translate;
+    background-color: #333;
+    height: 40px;
+    box-sizing: content-box;
 }
 
-#mood-list li label[for=blessed] {
-    background-image: url("../img/mood-blessed.png");
+#discovery-step ul:after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
-#mood-list li label[for=happy] {
+
+#discovery-step ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+    display: block;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    height: 34px;
+}
+
+#discovery-step ul li label {
+    position: absolute;
+    text-indent: -9999px;
+    background-size: 70%;
+    background-position: 12px 12px;
+    border-radius: 99em;
+    background-color: #ffffff;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 0;
+    background-repeat: no-repeat;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%,-50%);
+    -webkit-filter: grayscale(100%);
+}
+
+#discovery-step ul li label:before {
+    content: "";
+    background-color: green;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -2px;
+    top: 77%;
+    border-radius: 99em;
+    border: 1px solid #333;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#discovery-step input[name=mood] {
+    display: none;
+}
+
+#discovery-step ul li label[for=feelgood] {
+    background-image: url("../img/mood-feelgood.png");
+}
+
+#discovery-step ul li label[for=happy] {
     background-image: url("../img/mood-happy.png");
 }
 
-#mood-list li label[for=sick] {
+#discovery-step ul li label[for=sick] {
     background-image: url("../img/mood-sick.png");
 }
 
-#mood-list li label[for=love] {
-    background-image: url("../img/mood-love.png");
+#discovery-step ul li label[for=inlove] {
+    background-image: url("../img/mood-inlove.png");
 }
 
-#mood-list li input:checked + label {
-  outline: 2px solid #21b4d0;
+#discovery-step ul li input:checked + label {
+    -webkit-filter: grayscale(0%);
+}
+
+#discovery-step ul li input:checked + label:before {
+    content: "";
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 6px;
+    top: 0px;
+    border-radius: 99em;
+    border: 1px solid #333;
+    display: block;
 }
 
 #lighter {
@@ -226,7 +475,7 @@ h2::before {
     width: 88px;
     height: 200px;
     left: 39%;
-    top: 70%;
+    bottom: -25%;
     margin-right: -50%;
 }
 
@@ -246,15 +495,22 @@ h2::before {
     left: 8px;
 }
 
-#message {
+#message, #message * {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     text-align: center;
     display: block;
-    background-color: #f1f1f1;
-    margin: 30px;
+    background-color: #318bff;
+    margin: 0;
     padding: 15px;
     display: none;
+    position: absolute;
+    color: #ffffff;
+    top: 218px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translate;
+    white-space: nowrap;
 }
 
 
@@ -277,7 +533,7 @@ h1 {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     display: block;
-    margin: 0 90px;
+    margin: 0 75px;
     position: relative;
     background-color: #ffffff;
     padding-top: 10px;
