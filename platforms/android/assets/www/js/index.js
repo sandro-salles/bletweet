@@ -288,6 +288,8 @@ var app = {
 
                 $("#config").show();
 
+                window.scrollTo(0, 0);
+
                 app.goto_step(3);
                 app.bluetooth_start_discovery();
             }
